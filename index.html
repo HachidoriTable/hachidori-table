@@ -390,97 +390,148 @@ Gluten-free options are available for selected dishes.</p>
         });
 
         // Language switcher
-        const translations = {
-            'hero-location': {
-                en: 'About 15 min walk from Kyoto Station / 3 min walk from Toji Temple North Gate',
-                zh: '从京都站步行约15分钟 ／ 从东寺北总门步行约3分钟'
-            },
-            'intro-heading': {
-                en: 'Enjoy Plant-Based Meals with Confidence in Kyoto',
-                zh: '在京都，安心享用植物性餐点。'
-            },
-            'intro-text-ja': {
-                en: 'Hachidori Table is a plant-based café near Kyoto Station and Toji Temple, welcoming vegans, vegetarians, visitors with dietary needs, and travelers from abroad.\n\nOur food is made without animal-derived ingredients and without the five pungent roots (green onion, onion, garlic, chives, and shallot).\n\nGluten-free options are available for selected dishes.',
-                zh: '哈奇多利Table是一家位于京都站与东寺附近的植物性咖啡馆，欢迎纯素者、素食者、有饮食需求的顾客，以及来自海外的旅客。\n\n我们的料理不使用任何动物性食材，也不使用葱、洋葱、大蒜、韭菜、蕗荞等五辛。\n\n部分菜品可选择无麸质。'
-            },
-            'intro-menu-note': {
-                en: 'If you have any concerns about allergies or ingredients, please feel free to ask us.',
-                zh: '如对过敏原或食材有任何疑虑，欢迎随时向我们咨询。'
-            },
-            'popular-subheading': {
-                en: 'Recommended Dishes',
-                zh: '推荐菜品'
-            },
-            'menu-pdf-desc': {
-                en: 'View our menus in Japanese, English and Chinese.',
-                zh: '菜单可查看日文、英文与中文版本的PDF。'
-            },
-            'about-block-2-title': {
-                en: 'The Story Behind Hachidori Table',
-                zh: '哈奇多利Table 的故事'
-            },
-            'about-story-summary': {
-                en: 'The name Hachidori Table comes from Kyoto\'s Hachijō-dōri street and the hummingbird, the smallest bird in the world. In Native American culture, the hummingbird symbolizes peace, love, and happiness — a spirit we hope our café can carry.',
-                zh: '哈奇多利Table的店名，来自京都的八条通与世界上最小的鸟——蜂鸟。在印第安原住民文化中，蜂鸟象征着和平、爱与幸福，我们也希望本店能成为这样温柔的存在。'
-            },
-            'about-block-2-text': {
-                en: 'The story behind the name Hachidori Table\n\nOur café is located on Hachijō-dōri in Kyoto. The name comes from two things: Hachijō-dōri, a street here in Kyoto, and the hummingbird, the smallest bird in the world.\n\nIn Native American culture, the hummingbird is a symbol of peace, love, and happiness.\n\nWe hope this café can become a place that carries the same kind of gentle spirit.\n\n———————————\n\nThe hummingbird\'s drop\n\nA folk tale passed down among indigenous peoples of South America—\n\nThe forest was on fire. All of the animals, insects, and birds in the forest rushed to escape. But one little hummingbird named Kurikindi, or Golden Bird, stayed behind.\n\nThis little bird went back and forth between water and fire, dropping a single drop of water from its beak onto the fire below.\n\nWhen the animals saw this, they began to laugh at Kurikindi. "Why are you doing that?" they asked.\n\nAnd Kurikindi replied,\n\n"I am only doing what I can do."\n\n———————————\n\nLike that hummingbird, we too should cherish the spirit of doing the best we can.\n\nOur store is not large, but we hope that by providing vegetarian meals we can make a small contribution to the health of people and the planet.\n\nFrom this place, a small drop of water…\n\n———————————',
-                zh: '哈奇多利Table 名字的由来\n\n本店位于京都的八条通。店名取自两个来源：京都的这条"八条通"街道，以及世界上最小的鸟——蜂鸟。\n\n在印第安原住民文化中，蜂鸟象征着和平、爱与幸福。\n\n我们也希望这家店能成为这样一个温柔的存在。\n\n———————————\n\n蜂鸟的一滴水…\n\n南美原住民流传的民间故事——\n\n森林发生了火灾，动物们都争先恐后地逃离。只有一只名叫Kurikindi（金鸟）的小蜂鸟留了下来，它在水边与火场之间来回穿梭，把嘴里含着的水一滴一滴地滴在火上，试图扑灭大火。\n\n动物们看到后嘲笑它："你这样做有什么用？"\n\n蜂鸟回答道：\n\n"我只是在做我力所能及的事。"\n\n———————————\n\n我们也想像这只蜂鸟一样，珍惜尽己所能的精神。\n\n虽然我们的店不大，但希望能以素食的方式，为人与地球献上一份温柔的选择。\n\n从这个地方，献上小小的一滴水……\n\n———————————'
-            },
-            'daichu-text': {
-                en: 'Inside Hachidori Table, we also run "DAICHU Shop," a small store selling vegetarian ingredients.\n\nWe carry plant-based foods and seasonings, perfect for home use or as a Kyoto souvenir.',
-                zh: '哈奇多利Table店内附设贩售素食食材的「DAICHU Shop」。\n\n我们提供植物性食品与调味料等商品，非常适合自用或作为京都伴手礼。'
-            },
-            'space-subheading': {
-                en: 'Interior & Exterior',
-                zh: '店内与外观'
-            },
-            'access-directions': {
-                en: 'About 15 min walk from Kyoto Station\n3 min walk from Toji Temple North Gate\n2 parking spaces',
-                zh: '从京都站步行约15分钟\n从东寺北总门步行约3分钟\n设有2个停车位'
-            },
-            'access-hours-title': {
-                en: 'Hours',
-                zh: '营业时间'
-            },
-            'access-lunch-note': {
-                en: 'Open until 15:00 on days without dinner reservations.',
-                zh: '如当日无晚餐预约，营业至15:00。'
-            },
-            'access-dinner': {
-                en: 'Dinner 17:00–19:00 (Reservation Only)',
-                zh: '晚餐 17:00–19:00（仅限预约）'
-            },
-            'access-dinner-note': {
-                en: 'Reservations accepted until 15:00 the day before.',
-                zh: '请于前一天15:00前预约。'
-            },
-            'access-reservation-note': {
-                en: 'Groups of 5 or more require advance reservation.',
-                zh: '5人以上用餐需提前预约。'
-            },
-            'access-closed': {
-                en: 'Closed on Sunday',
-                zh: '周日定休'
-            },
-            'faq-q-1': { en: 'Is everything vegan?', zh: '所有餐点都是纯素的吗？' },
-            'faq-a-1': { en: 'Yes. All our dishes are 100% plant-based and contain no animal-derived ingredients.', zh: '是的，本店所有餐点均为100%植物性，不使用任何动物性食材。' },
-            'faq-q-2': { en: 'Do you use the five pungent roots (garlic, onion, etc.)?', zh: '是否使用五辛（葱蒜等）？' },
-            'faq-a-2': { en: 'We do not use green onion, onion, garlic, chives, or shallot.', zh: '我们不使用葱、洋葱、大蒜、韭菜、蕗荞。' },
-            'faq-q-3': { en: 'Are there gluten-free dishes?', zh: '有无麸质料理吗？' },
-            'faq-a-3': { en: 'Some menu items offer a gluten-free option. Please ask when ordering.', zh: '部分菜单可选择无麸质。点餐时请告知我们。' },
-            'faq-q-4': { en: 'Do you have an English menu?', zh: '有英文菜单吗？' },
-            'faq-a-4': { en: 'Yes, an English menu is available.', zh: '有的，我们备有英文菜单。' },
-            'faq-q-5': { en: 'Do you have a Chinese menu?', zh: '有中文菜单吗？' },
-            'faq-a-5': { en: 'Yes, a Chinese menu is available.', zh: '有的，我们备有中文菜单。' },
-            'faq-q-6': { en: 'Can I make a reservation?', zh: '可以预约吗？' },
-            'faq-a-6': { en: 'Dinner is by reservation only. Please book by 15:00 the day before. Groups of 5 or more also require advance reservation.', zh: '晚餐为完全预约制，请于前一天15:00前预约。5人以上用餐也需提前预约。' },
-            'faq-q-7': { en: 'Can you accommodate food allergies?', zh: '可以应对食物过敏吗？' },
-            'faq-a-7': { en: 'We will do our best to accommodate. Please contact us before your visit.', zh: '我们会尽力配合，请在到店前与我们联系。' },
-            'faq-q-8': { en: 'Is parking available?', zh: '有停车场吗？' },
-            'faq-a-8': { en: 'There are 2 parking spaces in front of the store.', zh: '店门前设有2个停车位。' },
-            'daichu-btn-shop': { en: 'Online Shop', zh: '线上商店' }
-        };
+const translations = {
+    'hero-location': {
+        en: 'About 15 min walk from Kyoto Station / 3 min walk from Toji Temple North Gate',
+        zh: '從京都站步行約15分鐘 ／ 從東寺北總門步行約3分鐘'
+    },
+    'intro-heading': {
+        en: 'Enjoy Plant-Based Meals with Confidence in Kyoto',
+        zh: '在京都，安心享用植物性餐點。'
+    },
+    'intro-text-ja': {
+        en: 'Hachidori Table is a plant-based café near Kyoto Station and Toji Temple, welcoming vegans, vegetarians, visitors with dietary needs, and travelers from abroad.\n\nOur food is made without animal-derived ingredients and without the five pungent roots (green onion, onion, garlic, chives, and shallot).\n\nGluten-free options are available for selected dishes.',
+        zh: 'Hachidori Table是一家位於京都站與東寺附近的植物性咖啡館，歡迎純素者、素食者、有飲食需求的顧客，以及來自海外的旅客。\n\n我們的料理不使用任何動物性食材，也不使用蔥、洋蔥、大蒜、韭菜、蕗蕎等五辛。\n\n部分餐點可選擇無麩質。'
+    },
+    'intro-menu-note': {
+        en: 'If you have any concerns about allergies or ingredients, please feel free to ask us.',
+        zh: '如對過敏原或食材有任何疑慮，歡迎隨時向我們詢問。'
+    },
+    'popular-subheading': {
+        en: 'Recommended Dishes',
+        zh: '推薦餐點'
+    },
+    'menu-pdf-desc': {
+        en: 'View our menus in Japanese, English and Chinese.',
+        zh: '可查看日文、英文與中文版本的菜單PDF。'
+    },
+    'about-block-2-title': {
+        en: 'The Story Behind Hachidori Table',
+        zh: 'Hachidori Table的故事'
+    },
+    'about-story-summary': {
+        en: 'The name Hachidori Table comes from Kyoto\'s Hachijō-dōri street and the hummingbird, the smallest bird in the world. In Native American culture, the hummingbird symbolizes peace, love, and happiness — a spirit we hope our café can carry.',
+        zh: 'Hachidori Table的店名，來自京都的八條通與世界上最小的鳥——蜂鳥。在美洲原住民文化中，蜂鳥象徵著和平、愛與幸福，我們也希望這間店能成為一個充滿這份溫柔精神的地方。'
+    },
+    'about-block-2-text': {
+        en: 'The story behind the name Hachidori Table\n\nOur café is located on Hachijō-dōri in Kyoto. The name comes from two things: Hachijō-dōri, a street here in Kyoto, and the hummingbird, the smallest bird in the world.\n\nIn Native American culture, the hummingbird is a symbol of peace, love, and happiness.\n\nWe hope this café can become a place that carries the same kind of gentle spirit.\n\n———————————\n\nThe hummingbird\'s drop\n\nA folk tale passed down among indigenous peoples of South America—\n\nThe forest was on fire. All of the animals, insects, and birds in the forest rushed to escape. But one little hummingbird named Kurikindi, or Golden Bird, stayed behind.\n\nThis little bird went back and forth between water and fire, dropping a single drop of water from its beak onto the fire below.\n\nWhen the animals saw this, they began to laugh at Kurikindi. "Why are you doing that?" they asked.\n\nAnd Kurikindi replied,\n\n"I am only doing what I can do."\n\n———————————\n\nLike that hummingbird, we too should cherish the spirit of doing the best we can.\n\nOur store is not large, but we hope that by providing vegetarian meals we can make a small contribution to the health of people and the planet.\n\nFrom this place, a small drop of water…\n\n———————————',
+        zh: 'Hachidori Table名字的由來\n\n本店位於京都的八條通。店名來自兩個元素：京都的「八條通」，以及世界上最小的鳥——蜂鳥。\n\n在美洲原住民文化中，蜂鳥象徵著和平、愛與幸福。\n\n我們也希望這間店能成為一個擁有同樣溫柔精神的地方。\n\n———————————\n\n蜂鳥的一滴水……\n\n這是一個流傳於南美洲原住民之間的民間故事——\n\n森林發生了大火，森林裡的動物、昆蟲和鳥兒都急忙逃離。只有一隻名叫Kurikindi（金鳥）的小蜂鳥留了下來。\n\n牠不斷往返於水邊與火場之間，用嘴巴含著水，一滴一滴地滴在火焰上。\n\n其他動物看到後笑著問牠：「你這樣做有什麼用？」\n\n蜂鳥回答：\n\n「我只是在做我能做的事。」\n\n———————————\n\n我們也希望像這隻蜂鳥一樣，珍惜盡自己所能去做的這份心意。\n\n雖然我們的店不大，但希望透過提供素食餐點，為人們與地球的健康盡一份小小的心力。\n\n從這個地方，獻上一小滴水……\n\n———————————'
+    },
+    'daichu-text': {
+        en: 'Inside Hachidori Table, we also run "DAICHU Shop," a small store selling vegetarian ingredients.\n\nWe carry plant-based foods and seasonings, perfect for home use or as a Kyoto souvenir.',
+        zh: 'Hachidori Table店內也設有販售素食食材的「DAICHU Shop」。\n\n我們提供植物性食品與調味料等商品，非常適合自用，也適合作為京都伴手禮。'
+    },
+    'space-subheading': {
+        en: 'Interior & Exterior',
+        zh: '店內與外觀'
+    },
+    'access-directions': {
+        en: 'About 15 min walk from Kyoto Station\n3 min walk from Toji Temple North Gate\n2 parking spaces',
+        zh: '從京都站步行約15分鐘\n從東寺北總門步行約3分鐘\n設有2個停車位'
+    },
+    'access-hours-title': {
+        en: 'Hours',
+        zh: '營業時間'
+    },
+    'access-lunch-note': {
+        en: 'Open until 15:00 on days without dinner reservations.',
+        zh: '如當日無晚餐預約，營業至15:00。'
+    },
+    'access-dinner': {
+        en: 'Dinner 17:00–19:00 (Reservation Only)',
+        zh: '晚餐 17:00–19:00（完全預約制）'
+    },
+    'access-dinner-note': {
+        en: 'Reservations accepted until 15:00 the day before.',
+        zh: '請於前一天15:00前預約。'
+    },
+    'access-reservation-note': {
+        en: 'Groups of 5 or more require advance reservation.',
+        zh: '5人以上用餐請事先預約。'
+    },
+    'access-closed': {
+        en: 'Closed on Sunday',
+        zh: '週日公休'
+    },
+    'faq-q-1': {
+        en: 'Is everything vegan?',
+        zh: '所有餐點都是純素的嗎？'
+    },
+    'faq-a-1': {
+        en: 'Yes. All our dishes are 100% plant-based and contain no animal-derived ingredients.',
+        zh: '是的，本店所有餐點皆為100%植物性，不使用任何動物性食材。'
+    },
+    'faq-q-2': {
+        en: 'Do you use the five pungent roots (garlic, onion, etc.)?',
+        zh: '有使用五辛（蔥、蒜等）嗎？'
+    },
+    'faq-a-2': {
+        en: 'We do not use green onion, onion, garlic, chives, or shallot.',
+        zh: '我們不使用蔥、洋蔥、大蒜、韭菜、蕗蕎等五辛。'
+    },
+    'faq-q-3': {
+        en: 'Are there gluten-free dishes?',
+        zh: '有無麩質餐點嗎？'
+    },
+    'faq-a-3': {
+        en: 'Some menu items offer a gluten-free option. Please ask when ordering.',
+        zh: '部分餐點可選擇無麩質，點餐時請向我們確認。'
+    },
+    'faq-q-4': {
+        en: 'Do you have an English menu?',
+        zh: '有英文菜單嗎？'
+    },
+    'faq-a-4': {
+        en: 'Yes, an English menu is available.',
+        zh: '有的，我們備有英文菜單。'
+    },
+    'faq-q-5': {
+        en: 'Do you have a Chinese menu?',
+        zh: '有中文菜單嗎？'
+    },
+    'faq-a-5': {
+        en: 'Yes, a Chinese menu is available.',
+        zh: '有的，我們備有繁體中文菜單。'
+    },
+    'faq-q-6': {
+        en: 'Can I make a reservation?',
+        zh: '可以預約嗎？'
+    },
+    'faq-a-6': {
+        en: 'Dinner is by reservation only. Please book by 15:00 the day before. Groups of 5 or more also require advance reservation.',
+        zh: '晚餐採完全預約制，請於前一天15:00前預約。5人以上用餐也請事先預約。'
+    },
+    'faq-q-7': {
+        en: 'Can you accommodate food allergies?',
+        zh: '可以協助處理食物過敏需求嗎？'
+    },
+    'faq-a-7': {
+        en: 'We will do our best to accommodate. Please contact us before your visit.',
+        zh: '我們會盡可能配合，請於來店前與我們聯絡。'
+    },
+    'faq-q-8': {
+        en: 'Is parking available?',
+        zh: '有停車場嗎？'
+    },
+    'faq-a-8': {
+        en: 'There are 2 parking spaces in front of the store.',
+        zh: '店門前設有2個停車位。'
+    },
+    'daichu-btn-shop': {
+        en: 'Online Shop',
+        zh: '線上商店'
+    }
+};
 
         const originalText = {};
         document.querySelectorAll('[data-template-id]').forEach(el => {
