@@ -43,7 +43,12 @@
     <nav class="hidden md:flex gap-6 text-sm items-center"><a href="#menu" class="text-brown hover:text-coral transition">Menu</a> <a href="#about" class="text-brown hover:text-coral transition">About</a> <a href="#daichu" class="text-brown hover:text-coral transition">DAICHU Shop</a> <a href="#access" class="text-brown hover:text-coral transition">Access</a> <a href="#faq" class="text-brown hover:text-coral transition">FAQ</a>
      <div class="flex gap-1 ml-2 border-l border-gray-200 pl-4"><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="ja">JA</button><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="en">EN</button><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="zh">中文</button></div>
     </nav>
-    <div class="flex md:hidden gap-2"><a href="#menu-section" class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium">Menu</a> <a href="#access" class="btn-brown text-xs px-3 py-1.5 rounded-full font-medium">Access</a> <button id="hamburger" class="ml-2 p-1" aria-label="メニューを開く"><i data-lucide="menu" style="width:22px;height:22px;"></i></button>
+    <div class="flex md:hidden gap-2"> 
+      <button type="button"
+  class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium"
+  onclick="document.getElementById('mobile-nav').classList.add('active')">
+  Language
+</button> <a href="#access" class="btn-brown text-xs px-3 py-1.5 rounded-full font-medium">Access</a> <button id="hamburger" class="ml-2 p-1" aria-label="メニューを開く"><i data-lucide="menu" style="width:22px;height:22px;"></i></button>
     </div>
    </div><!-- Mobile nav -->
    <div id="mobile-nav" class="nav-overlay fixed inset-0 bg-white z-50 flex-col items-center justify-center gap-8 text-lg"><button id="close-nav" class="absolute top-4 right-4 p-2" aria-label="閉じる"><i data-lucide="x" style="width:28px;height:28px;"></i></button> <a href="#menu" class="nav-link text-brown font-medium">Menu</a> <a href="#about" class="nav-link text-brown font-medium">About</a> <a href="#daichu" class="nav-link text-brown font-medium">DAICHU Shop</a> <a href="#access" class="nav-link text-brown font-medium">Access</a> <a href="#faq" class="nav-link text-brown font-medium">FAQ</a>
