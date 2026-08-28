@@ -351,7 +351,9 @@ Gluten-free options are available for selected dishes.</p>
      <div class="bg-ivory rounded-2xl p-6 md:p-8 mb-8">
       <h3 data-template-id="access-name" class="canva-text font-bold text-base mb-4" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;"> Vegetarian Food &amp; Coffee<br> ハチドリTable</h3>
       <p data-template-id="access-address" class="canva-text text-sm mb-6" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">〒601-8471<br>
-        京都府京都市南区八条通大宮西入八条町438</p>
+        京都府京都市南区八条通大宮西入八条町438<br>
+        <span id="access-address-sub" class="hidden text-xs text-gray-500 mt-1 inline-block"></span>
+      </p>
       <div class="mb-6">
        <p data-template-id="access-directions" class="canva-text text-sm leading-relaxed whitespace-pre-line" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">京都駅から徒歩約15分
 東寺北総門から徒歩約3分
@@ -424,7 +426,9 @@ Gluten-free options are available for selected dishes.</p>
    <div class="max-w-3xl mx-auto text-center">
     <p data-template-id="footer-name" class="canva-text font-bold text-xl mb-1" style="color: rgb(253, 251, 247); font-weight: 700; font-style: normal; font-size: 20px;">ハチドリ Table</p>
     <p data-template-id="footer-tagline" class="canva-text text-sm opacity-80 mb-6" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 14px;">Vegetarian Food &amp; Coffee</p>
-    <p data-template-id="footer-address" class="canva-text text-sm opacity-70 mb-2" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">〒601-8471 京都府京都市南区八条通大宮西入八条町438</p>
+    <p data-template-id="footer-address" class="canva-text text-sm opacity-70 mb-2" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">〒601-8471 京都府京都市南区八条通大宮西入八条町438<br>
+      <span id="footer-address-sub" class="hidden text-xs opacity-80 mt-1 inline-block"></span>
+    </p>
     <p data-template-id="footer-tel" class="canva-text text-sm opacity-70 mb-4" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">TEL 075-201-0083</p>
     <p data-template-id="footer-hours" class="canva-text text-sm opacity-70 mb-8" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">Lunch 11:00–14:00 ／ Dinner 17:00–19:00 Reservation Only ／ Closed on Sunday</p>
     <div class="flex flex-wrap justify-center gap-4 mb-8"><a href="#menu" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Menu</a> <a href="https://maps.app.goo.gl/e3MHZNTWLu7jX9RPA" target="_blank" rel="noopener noreferrer" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Google Maps</a> <a href="https://www.instagram.com/hachidori.table/" target="_blank" rel="noopener noreferrer" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Instagram</a> <a href="tel:0752010083" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Call</a>
@@ -700,6 +704,27 @@ const translations = {
 
             document.querySelectorAll('.lang-btn').forEach(b => {
                 b.classList.toggle('lang-active', b.dataset.lang === lang);
+            });
+
+            // Keep the official Japanese address visible in every language.
+            // Show a smaller translated address underneath for EN / 繁中.
+            const accessAddressSub = document.getElementById('access-address-sub');
+            const footerAddressSub = document.getElementById('footer-address-sub');
+
+            const addressSubText = {
+                en: '438 Hachijo-cho, Minami-ku, Kyoto, 601-8471, Japan',
+                zh: '繁中：日本京都府京都市南區八條町438'
+            };
+
+            [accessAddressSub, footerAddressSub].forEach(el => {
+                if (!el) return;
+                if (lang === 'ja') {
+                    el.textContent = '';
+                    el.classList.add('hidden');
+                } else {
+                    el.textContent = addressSubText[lang];
+                    el.classList.remove('hidden');
+                }
             });
 
             document.getElementById('mobile-nav')?.classList.remove('active');
