@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Vegetarian food&coffee ハチドリTable",
+    "alternateName": "Hachidori Table Kyoto",
+    "url": "https://hachidoritable.github.io/hachidori-table/",
+    "telephone": "+81-75-201-0083",
+    "description": "100% plant-based vegan and vegetarian restaurant near Kyoto Station and Toji Temple in Kyoto. No five pungent roots. English and Traditional Chinese menus available.",
+    "servesCuisine": [
+      "Vegan",
+      "Vegetarian",
+      "Plant-Based"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "601-8471",
+      "addressRegion": "京都府",
+      "addressLocality": "京都市南区",
+      "streetAddress": "八条通大宮西入八条町438",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.9841989,
+      "longitude": 135.74664714
+    },
+    "hasMap": "https://www.google.com/maps?q=34.9841989,135.74664714",
+    "sameAs": [
+      "https://www.instagram.com/hachidori.table/"
+    ]
+  }
+  </script>
+
+
+<title>京都駅・東寺のヴィーガン・ベジタリアンカフェ｜ハチドリTable</title>
+
+<meta name="description" content="京都駅から徒歩約15分、東寺北総門から徒歩約3分。ハチドリTableは100%植物性・五葷不使用のヴィーガン・ベジタリアン対応カフェです。一部グルテンフリー対応。英語・繁體中文メニューあり。">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://hachidoritable.github.io/hachidori-table/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ハチドリTable">
+<meta property="og:title" content="京都駅・東寺のヴィーガン・ベジタリアンカフェ｜ハチドリTable">
+<meta property="og:description" content="京都駅から徒歩約15分、東寺北総門から徒歩約3分。100%植物性・五葷不使用のヴィーガン・ベジタリアン対応カフェ。一部グルテンフリー対応、英語・繁體中文メニューあり。">
+<meta property="og:url" content="https://hachidoritable.github.io/hachidori-table/">
+<meta property="og:image" content="https://hachidoritable.github.io/hachidori-table/cafe.JPG">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="京都駅・東寺のヴィーガン・ベジタリアンカフェ｜ハチドリTable">
+<meta name="twitter:description" content="京都駅・東寺近く。100%植物性・五葷不使用のヴィーガン・ベジタリアン対応カフェ。">
+<meta name="twitter:image" content="https://hachidoritable.github.io/hachidori-table/cafe.JPG">
+<meta name="theme-color" content="#FDFBF7">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <style>
+        :root {
+            --ivory: #FDFBF7;
+            --brown: #3D2B1F;
+            --coral: #E8806A;
+            --green: #6B8E6B;
+            --gray: #5C5047;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'DM Sans', sans-serif; color: var(--brown); }
+        section[id] { scroll-margin-top: 76px; }
+        .bg-ivory { background-color: var(--ivory); }
+        .text-coral { color: var(--coral); }
+        .bg-coral { background-color: var(--coral); }
+        .text-brown { color: var(--brown); }
+        .bg-brown { background-color: var(--brown); }
+        .text-green { color: var(--green); }
+        .btn-coral { background-color: var(--coral); color: #fff; }
+        .btn-coral:hover { background-color: #d4705c; }
+        .btn-brown { background-color: var(--brown); color: #fff; }
+        .btn-brown:hover { background-color: #2a1d15; }
+       .faq-answer { display: none; }
+       .faq-answer.open { display: block; }
+        .nav-overlay { display: none; }
+        .nav-overlay.active { display: flex; }
+        .about-story-copy { letter-spacing: 0.025em; }
+        .about-story-copy::first-line { color: var(--brown); }
+        .lang-btn { background-color: transparent; color: var(--gray); border: 1px solid #e5e0da; }
+        .lang-btn.lang-active { background-color: var(--brown); color: #fff; border-color: var(--brown); }
+
+        /* ==============================
+           HERO RESPONSIVE
+           PC image: 1920 x 900
+           Mobile image: 1080 x 1440
+        ============================== */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1920 / 900;
+            overflow: hidden;
+        }
+        .hero-picture,
+        .hero-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-image {
+            object-fit: cover;
+            object-position: center;
+        }
+        .hero-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            z-index: 10;
+        }
+
+        [data-template-id="hero-title"] {
+            font-family: 'Kiwi Maru', serif !important;
+        }
+
+        /* Popular Menu: desktop keeps 224px, mobile becomes 180px */
+        .popular-menu-image {
+            width: 100%;
+            height: 224px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            .hero-section {
+                aspect-ratio: 3 / 4;
+            }
+            .hero-content {
+                transform: translateY(8%);
+            }
+
+            /* Smartphone hero title: about 15% smaller */
+            [data-template-id="hero-title"] {
+                font-size: 36px !important;
+    letter-spacing: -0.06em !important;
+            }
+
+            .popular-menu-image {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+ <body id="top" data-template-id="__page-root" class="bg-ivory min-h-screen" style="background: rgb(253, 251, 247);"><!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+   <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between"><a href="#top" data-template-id="header-logo" class="canva-text text-lg font-bold text-brown" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 18px;">ハチドリ Table</a>
+    <nav class="hidden md:flex gap-6 text-sm items-center"><a href="#menu" class="text-brown hover:text-coral transition">Menu</a> <a href="#about" class="text-brown hover:text-coral transition">About</a> <a href="#daichu" class="text-brown hover:text-coral transition">DAICHU Shop</a> <a href="#access" class="text-brown hover:text-coral transition">Access</a> <a href="#faq" class="text-brown hover:text-coral transition">FAQ</a>
+     <div class="flex gap-1 ml-2 border-l border-gray-200 pl-4"><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="ja">JA</button><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="en">EN</button><button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="zh">繁中</button></div>
+    </nav>
+    <div class="flex md:hidden gap-2"> 
+      <button type="button"
+  class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium"
+  onclick="document.getElementById('mobile-nav').classList.add('active')">
+  Language
+</button> <a href="#access" class="btn-brown text-xs px-3 py-1.5 rounded-full font-medium">Access</a> <button id="hamburger" class="ml-2 p-1" aria-label="メニューを開く"><i data-lucide="menu" style="width:22px;height:22px;"></i></button>
+    </div>
+   </div><!-- Mobile nav -->
+   <div id="mobile-nav" class="nav-overlay fixed inset-0 bg-white z-50 flex-col items-center justify-center gap-8 text-lg"><button id="close-nav" class="absolute top-4 right-4 p-2" aria-label="閉じる"><i data-lucide="x" style="width:28px;height:28px;"></i></button> <a href="#menu" class="nav-link text-brown font-medium">Menu</a> <a href="#about" class="nav-link text-brown font-medium">About</a> <a href="#daichu" class="nav-link text-brown font-medium">DAICHU Shop</a> <a href="#access" class="nav-link text-brown font-medium">Access</a> <a href="#faq" class="nav-link text-brown font-medium">FAQ</a>
+    <div class="flex gap-2 mt-4"><button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="ja">JA</button><button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="en">EN</button><button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="zh">繁中</button></div>
+   </div>
+  </header>
+  <main><!-- SECTION 1: Hero -->
+<!-- SECTION 1: Hero -->
+<section class="hero-section">
+
+  <picture class="hero-picture">
+    <!-- Smartphone: 1080 x 1440 -->
+    <source
+      media="(max-width: 767px)"
+      srcset="top-mobile.png"
+    >
+
+    <!-- PC: 1920 x 900 -->
+    <img
+      data-template-id="hero-image"
+      class="canva-image hero-image"
+      loading="eager"
+      fetchpriority="high"
+      src="top(or).png"
+      alt="京都駅・東寺近くのヴィーガンカフェ ハチドリTable"
+    >
+  </picture>
+
+  <div class="hero-content">
+
+    <h1
+      data-template-id="hero-title"
+      class="canva-text text-4xl md:text-5xl font-bold mb-2"
+      style="
+        color: rgb(61, 43, 31);
+        font-weight: 700;
+        font-size: 42px;
+        text-shadow: 0 1px 3px rgba(255,255,255,.9);
+      "
+    >
+      ハチドリ Table
+    </h1>
+
+    <p
+      data-template-id="hero-subtitle"
+      class="canva-text text-lg md:text-xl mb-6"
+      style="
+        color: rgb(61, 43, 31);
+        font-weight: 500;
+        font-size: 18px;
+        text-shadow: 0 1px 3px rgba(255,255,255,.9);
+      "
+    >
+      Vegetarian Food &amp; Coffee
+    </p>
+
+    <p
+      data-template-id="hero-location"
+      class="canva-text text-sm mb-6"
+      style="
+        color: rgb(61, 43, 31);
+        font-weight: 500;
+        font-size: 14px;
+        text-shadow: 0 1px 3px rgba(255,255,255,.9);
+      "
+>
+<span class="block md:inline">京都駅から徒歩約15分</span>
+<span class="hidden md:inline"> ／ </span>
+<span class="block md:inline">東寺北総門から徒歩約3分</span>
+    </p>
+
+    <!-- VEGAN BADGE -->
+    <div
+      class="rounded-full px-8 py-4 mb-8"
+      style="
+        background: transparent;
+        border: 4px solid #79A95B;
+      "
+    >
+      <p
+        data-template-id="hero-badge-1"
+        class="canva-text font-bold"
+        style="
+          color: rgb(61,43,31);
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: .05em;
+          margin: 0;
+        "
+      >
+        100%　VEGAN
+      </p>
+    </div>
+
+    <!-- HERO BUTTONS -->
+    <div class="flex gap-3" style="background: transparent; box-shadow: none;">
+      <a
+        href="#menu"
+        data-template-id="hero-btn-menu"
+        class="canva-button px-6 py-3 rounded-full font-medium text-sm"
+        style="
+          background: rgb(232,128,106);
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+        "
+      >
+        View Menu
+      </a>
+
+      <a
+        href="#access"
+        data-template-id="hero-btn-access"
+        class="canva-button px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2"
+        style="
+          background: #FCE5D5;
+          color: rgb(61,43,31);
+          font-weight: 600;
+          font-size: 16px;
+        "
+      >
+        <i data-lucide="map-pin" style="width:17px;height:17px;"></i>
+        <span>Access</span>
+      </a>
+    </div>
+  </div>
+</section>
+   <!-- SECTION 2: About intro -->
+   <section class="px-6 py-16 max-w-3xl mx-auto text-center">
+<div class="flex justify-center mb-8">
+  <img
+    src="logo.png"
+    alt="ハチドリ Table ロゴ"
+    class="w-36 md:w-40 h-auto"
+    loading="lazy"
+  >
+</div>
+
+  <!-- 今ある「京都で、安心して〜」など -->
+    <h2 data-template-id="intro-heading" class="canva-text font-bold text-2xl md:text-3xl mb-2" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">京都で安心して植物性のお食事を。</h2>
+    <p data-template-id="intro-heading-en" class="canva-text text-sm text-gray-500 mb-8 hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 13px;">Plant-Based Food You Can Enjoy With Confidence in Kyoto</p>
+<p data-template-id="intro-text-ja" class="canva-text text-base leading-relaxed mb-6">
+ヴィーガン・ベジタリアンの方はもちろん、<br>
+食事に配慮が必要な方や、海外から京都を訪れる方にも、<br>
+安心して植物性のお食事を楽しんでいただけるカフェです。<br><br>
+
+当店のお料理は100%植物性。<br>
+ネギ、玉ねぎ、ニンニク、あさつき、らっきょうの五葷を使用していません。<br><br>
+
+一部、グルテンフリーを選べるメニューもご用意しています。
+</p>
+    <p data-template-id="intro-menu-note" class="canva-text text-sm leading-relaxed mb-6 text-left md:text-center" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">
+アレルギーや原材料について気になる点がある場合は、ご相談ください。<br>
+一部のメニューにはアルコール成分が含まれています。気になる方は、ご注文前にスタッフへご確認ください。
+</p>
+    <p data-template-id="intro-text-en" class="canva-text text-sm leading-relaxed text-gray-600 text-left md:text-center hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Hachidori Table is a plant-based café near Kyoto Station and Toji Temple.
+
+Our food is made without animal-derived ingredients and without the five pungent roots, including garlic and onion.
+
+Gluten-free options are available for selected dishes.</p>
+<section class="px-6 py-12 bg-white">
+  <div class="max-w-2xl mx-auto">
+
+    <div class="grid grid-cols-2 gap-4">
+
+      <div class="canva-card flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]" style="background: rgb(253, 251, 247);">
+        <i data-lucide="leaf" class="text-green mb-3" style="width:28px;height:28px;"></i>
+        <span data-template-id="feature-1-text" class="canva-text text-sm font-medium">
+          100%植物性
+        </span>
+      </div>
+
+      <div class="canva-card flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]" style="background: rgb(253, 251, 247);">
+        <i data-lucide="circle-off" class="text-green mb-3" style="width:28px;height:28px;"></i>
+        <span data-template-id="feature-2-text" class="canva-text text-sm font-medium">
+          五葷不使用
+        </span>
+      </div>
+
+      <div class="canva-card flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]" style="background: rgb(253, 251, 247);">
+        <i data-lucide="languages" class="text-green mb-3" style="width:28px;height:28px;"></i>
+        <span data-template-id="feature-3-text" class="canva-text text-sm font-medium">
+          英語メニュー
+        </span>
+      </div>
+
+      <div class="canva-card flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]" style="background: rgb(253, 251, 247);">
+        <i data-lucide="languages" class="text-green mb-3" style="width:28px;height:28px;"></i>
+        <span data-template-id="feature-4-text" class="canva-text text-sm font-medium">
+          繁體中文メニュー
+        </span>
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <div class="canva-card flex items-center justify-center gap-4 text-center p-5 rounded-xl bg-ivory" style="background: rgb(253, 251, 247);">
+        <i data-lucide="store" class="text-green flex-shrink-0" style="width:28px;height:28px;"></i>
+        <span data-template-id="feature-5-text" class="canva-text text-sm font-medium">
+          ベジタリアン食材SHOP「大中」併設
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+   </section><!-- SECTION 4: Popular Menu -->
+   <section id="menu" class="px-6 py-16">
+    <div class="max-w-4xl mx-auto">
+     <h2 data-template-id="popular-heading" class="canva-text text-center font-bold text-2xl mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">Popular Menu</h2>
+     <p data-template-id="popular-subheading" class="canva-text text-center text-sm text-gray-500 mb-10" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 13px;">おすすめメニュー</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8"><!-- Item 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-sm bg-white"><img data-template-id="menu-img-1" class="canva-image popular-menu-image" loading="lazy" src="soykatsu.jpg" alt="ハチドリTableの大豆ミートカツ丼">
+       <div class="p-4">
+        <h3 data-template-id="menu-name-ja-1" class="canva-text font-bold text-base mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;">大豆ミートカツ丼</h3>
+        <p data-template-id="menu-name-en-1" class="canva-text text-sm text-gray-500 mb-2" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Soy Meat Cutlet Rice Bowl</p>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Garlic</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Onion</span>
+        </div>
+       </div>
+      </div><!-- Item 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-sm bg-white"><img data-template-id="menu-img-2" class="canva-image popular-menu-image" loading="lazy" src="ramen.JPG" alt="ハチドリTableのヴィーガン胡麻ラーメン">
+       <div class="p-4">
+        <h3 data-template-id="menu-name-ja-2" class="canva-text font-bold text-base mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;">胡麻ラーメン</h3>
+        <p data-template-id="menu-name-en-2" class="canva-text text-sm text-gray-500 mb-2" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Sesame Ramen</p>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Garlic</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Onion</span>
+        </div>
+       </div>
+      </div><!-- Item 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-sm bg-white"><img data-template-id="menu-img-3" class="canva-image popular-menu-image" loading="lazy" src="curryudon.JPG" alt="ハチドリTableのヴィーガンカレーうどん">
+       <div class="p-4">
+        <h3 id="menu-name-ja-3" data-template-id="menu-name-ja-3" class="canva-text font-bold text-base mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;">カレーうどん</h3>
+        <p data-template-id="menu-name-en-3" class="canva-text text-sm text-gray-500 mb-2" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Curry Udon</p>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Garlic</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Onion</span>
+        </div>
+       </div>
+      </div><!-- Item 4 -->
+      <div class="rounded-2xl overflow-hidden shadow-sm bg-white"><img data-template-id="menu-img-4" class="canva-image popular-menu-image" loading="lazy" src="soyteriyaki.JPG" alt="ハチドリTableの大豆ミート照り焼き丼">
+       <div class="p-4">
+        <h3 data-template-id="menu-name-ja-4" class="canva-text font-bold text-base mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;">大豆ミート照り焼き丼</h3>
+        <p data-template-id="menu-name-en-4" class="canva-text text-sm text-gray-500 mb-2" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Soy Meat Teriyaki Rice Bowl</p>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Garlic</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Onion</span>
+        </div>
+       </div>
+      </div><!-- Item 5 -->
+      <div class="rounded-2xl overflow-hidden shadow-sm bg-white md:col-span-2 md:max-w-md md:mx-auto"><img data-template-id="menu-img-5" class="canva-image popular-menu-image" loading="lazy" src="vegetablecurry.JPG" alt="ハチドリTableの植物性野菜カレー">
+       <div class="p-4">
+        <h3 data-template-id="menu-name-ja-5" class="canva-text font-bold text-base mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;">野菜カレー</h3>
+        <p data-template-id="menu-name-en-5" class="canva-text text-sm text-gray-500 mb-2" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Vegetable Curry</p>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Garlic</span> <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">No Onion</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- SECTION 5: Menu PDFs -->
+   <section id="menu-section" class="px-6 py-12 bg-white">
+    <div class="max-w-2xl mx-auto text-center">
+     <h2 data-template-id="menu-pdf-heading" class="canva-text font-bold text-2xl mb-3" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">Menu</h2>
+     <p data-template-id="menu-pdf-desc" class="canva-text text-sm text-gray-600 mb-2" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">メニューはPDFでご覧いただけます。</p>
+      <p
+  data-template-id="menu-season-note"
+  class="canva-text text-xs text-gray-500 mb-6"
+  style="
+    color: rgb(92, 80, 71);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.8;
+  "
+>
+  季節や仕入れ状況により、メニュー内容が変更になる場合があります。
+</p>
+     <p data-template-id="menu-pdf-desc-en" class="canva-text text-sm text-gray-500 mb-8 hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 13px;">View our menus in Japanese, English and Traditional Chinese.</p>
+     <div class="flex flex-wrap justify-center gap-4"><a href="https://drive.google.com/file/d/15Y8FEBpvUlyppOg43q6Vr815wTpsXnZv/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-template-id="menu-btn-ja" class="canva-button btn-brown px-6 py-3 rounded-full font-medium text-sm" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">日本語メニュー</a> <a href="https://drive.google.com/file/d/1iOdFtKsvX5TJUQA37xL8r2da85KLECIK/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-template-id="menu-btn-en" class="canva-button btn-brown px-6 py-3 rounded-full font-medium text-sm" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">English Menu</a> <a href="https://drive.google.com/file/d/1AJMSC3eYCA4s5fAnnwUPO3_CIM28ywD8/view?usp=share_link" target="_blank" rel="noopener noreferrer" data-template-id="menu-btn-zh" class="canva-button btn-brown px-6 py-3 rounded-full font-medium text-sm" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">繁體中文菜單</a>
+     </div>
+    </div>
+   </section><!-- SECTION 6: About -->
+   <section id="about" class="px-6 py-20 md:py-28">
+    <div class="max-w-3xl mx-auto">
+     <div class="px-2 md:px-8 mb-12 md:mb-16">
+      <h2 data-template-id="about-heading" class="canva-text text-center font-bold" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 34px; letter-spacing: -0.03rem;">About ハチドリ Table</h2>
+     </div>
+     <div class="space-y-8 md:space-y-10">
+      <article class="p-7 md:p-12">
+       <h3 data-template-id="about-block-2-title" class="canva-text font-bold text-center mb-8 md:mb-10" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 17px;">ハチドリTableに込めた想い</h3>
+       <p data-template-id="about-story-summary" class="canva-text text-sm leading-loose mb-10 md:mb-12" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">ハチドリTableという名前は、京都の八条通りと、世界で一番小さな鳥ハチドリに由来します。<br><br>
+         ネイティブアメリカンの文化では、ハチドリは平和、愛、幸福の象徴です。<br><br>
+         私たちも、そのようなやさしい場所でありたいと願っています。</p>
+       <div class="flex justify-center mb-7">
+        <button id="about-story-toggle" type="button" aria-expanded="false" aria-controls="about-story-full" class="canva-button btn-brown px-5 py-2.5 rounded-full text-sm font-medium"> <span data-template-id="about-story-more" class="canva-text" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">もっと読む</span> <span data-template-id="about-story-less" class="canva-text hidden" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;">折りたたむ</span> </button>
+       </div>
+       <div id="about-story-full" class="hidden border-t border-stone-100 pt-9 md:pt-12">
+        <p data-template-id="about-block-2-text" class="canva-text about-story-copy text-sm leading-loose whitespace-pre-line" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.45;">ハチドリTable の名に込めた想い
+
+当店は京都の八条通りにあります
+お店のある“八条通り”と
+世界で一番小さな鳥“ハチドリ”から名付けました
+
+ネイティブアメリカンの間でハチドリは“平和、愛、幸福”の象徴です
+
+この店も、そんな象徴となれるようにとの願いを込めています
+
+ハチドリのひとしずく…
+
+南米の先住民族に伝わる民話——
+
+森で火事が起こり、
+動物達はみんな我先にと逃げていきました。
+一羽の小さなハチドリは留まって、水辺と森を行ったり来たり。
+
+くちばしに入れた水を一滴ずつ火の上に落とし、火を消そうとしました。
+動物達はそれを見て「そんなことして何になるんだ」と笑います。
+
+ハチドリはこう答えました。
+「私は自分が出来ることをしているだけだよ」
+
+
+私たちも、そんなハチドリのように
+自分が出来る精一杯を尽くす精神を大事にしたい
+
+小さくても、自分達にできることを、菜食という形で
+人や地球にやさしい選択を届けていきたいと思っています。
+
+この場所から、小さなひとしずくを…
+
+</p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section><!-- SECTION 7: DAICHU Shop -->
+   <section id="daichu" class="px-6 py-16 bg-white">
+    <div class="max-w-4xl mx-auto">
+     <h2 data-template-id="daichu-heading" class="canva-text text-center font-bold text-2xl mb-2" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">DAICHU Shop</h2>
+     <p data-template-id="daichu-subheading" class="canva-text text-center text-sm text-gray-500 mb-8" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Vegetarian Food Shop Inside the Café</p>
+     <p data-template-id="daichu-text" class="canva-text text-sm leading-relaxed text-center max-w-xl mx-auto mb-10 whitespace-pre-line" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">ハチドリTableの店内には、ベジタリアン食材を販売する「DAICHU Shop」を併設しています。
+
+植物性食品や調味料など、ご自宅用や京都のお土産にもおすすめの商品を取り扱っています。</p>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-4"><img data-template-id="daichu-img-1" class="canva-image w-full h-48 object-cover rounded-xl" loading="lazy" src="daichuproduct.JPG" alt="ハチドリTable店内のDAICHU Shopで販売するベジタリアン食材"> <img data-template-id="daichu-img-2" class="canva-image w-full h-48 object-cover rounded-xl" loading="lazy" src="shop.JPG" alt="京都 ハチドリTable店内のDAICHU Shop"> <img data-template-id="daichu-img-3" class="canva-image w-full h-48 object-cover rounded-xl" loading="lazy" src="vegcurry.JPG" alt="DAICHU Shopで取り扱う植物性食品">
+     </div>
+     <div class="flex justify-center mt-8"><a href="https://daichyuolive.thebase.in" target="_blank" rel="noopener noreferrer" class="canva-button btn-coral px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2" style="background: rgb(232, 128, 106); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 14px;"><i data-lucide="shopping-bag" style="width:16px;height:16px;"></i><span data-template-id="daichu-btn-shop">オンラインショップ</span></a>
+     </div>
+    </div>
+     
+   </section><!-- SECTION 8: Our Space -->
+   <section class="px-6 py-16">
+    <div class="max-w-4xl mx-auto">
+     <h2 data-template-id="space-heading" class="canva-text text-center font-bold text-2xl mb-1" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">Our Space</h2>
+     <p data-template-id="space-subheading" class="canva-text text-center text-sm text-gray-500 mb-10" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 13px;">店内・外観</p>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-3"><img data-template-id="space-img-1" class="canva-image w-full h-48 md:h-64 object-cover rounded-xl col-span-2 md:col-span-2" loading="lazy" src="cafe.JPG" alt="京都のヴィーガンカフェ ハチドリTableの店内"> <img data-template-id="space-img-2" class="canva-image w-full h-40 object-cover rounded-xl" loading="lazy" src="soykatsu.jpg" alt="ハチドリTableの大豆ミートカツ丼"> <img data-template-id="space-img-3" class="canva-image w-full h-40 object-cover rounded-xl" loading="lazy" src="ramen.JPG" alt="ハチドリTableのヴィーガン胡麻ラーメン"> <img data-template-id="space-img-4" class="canva-image w-full h-40 object-cover rounded-xl" loading="lazy" src="coffee.JPG" alt="ハチドリTableのコーヒー"> <img data-template-id="space-img-5" class="canva-image w-full h-48 md:h-56 object-cover rounded-xl col-span-2" loading="lazy" src="exterior.JPG" alt="京都駅・東寺近くのハチドリTable外観">
+     </div>
+    </div>
+   </section><!-- SECTION 9: Access -->
+   <section id="access" class="px-6 py-16 bg-white">
+    <div class="max-w-3xl mx-auto">
+     <h2 data-template-id="access-heading" class="canva-text text-center font-bold text-2xl mb-10" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">Access</h2>
+     <div class="bg-ivory rounded-2xl p-6 md:p-8 mb-8">
+      <h3 data-template-id="access-name" class="canva-text font-bold text-base mb-4" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 19px;"> Vegetarian Food &amp; Coffee<br> ハチドリTable</h3>
+      <p data-template-id="access-address" class="canva-text text-sm mb-6" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">〒601-8471<br>
+        京都府京都市南区八条通大宮西入八条町438<br>
+        <span id="access-address-sub" class="hidden text-xs text-gray-500 mt-1 inline-block"></span>
+      </p>
+      <div class="mb-6">
+       <p data-template-id="access-directions" class="canva-text text-sm leading-relaxed whitespace-pre-line" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">京都駅から徒歩約15分
+東寺北総門から徒歩約3分
+駐車場2台</p>
+      </div>
+      <div class="mb-6">
+       <h4 data-template-id="access-hours-title" class="canva-text font-bold text-sm mb-2" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 14px;">営業時間</h4>
+       <p data-template-id="access-lunch" class="canva-text text-sm" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">Lunch 11:00–14:00</p>
+       <p data-template-id="access-lunch-note" class="canva-text text-xs text-gray-500 mb-3" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 12px;">夜の予約がない日は15:00まで営業。</p>
+       <p data-template-id="access-dinner" class="canva-text text-sm" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">Dinner 17:00–19:00（完全予約制）</p>
+       <p data-template-id="access-dinner-note" class="canva-text text-xs text-gray-500 mb-3" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 12px;">予約は前日の15:00まで。</p>
+       <p data-template-id="access-reservation-note" class="canva-text text-xs text-gray-500 mb-3" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 12px;">5名以上で来店する場合は、事前予約をお願いします。</p>
+       <p data-template-id="access-closed" class="canva-text text-sm font-bold" style="color: rgb(232, 128, 106); font-weight: 700; font-style: normal; font-size: 14px;">Closed on Sunday ／ 日曜定休　その他</p>
+      </div>
+      <p data-template-id="access-tel" class="canva-text text-sm mb-6" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">TEL 075-201-0083</p>
+     </div>
+     <div class="flex flex-wrap justify-center gap-3"><a href="https://maps.app.goo.gl/e3MHZNTWLu7jX9RPA" target="_blank" rel="noopener noreferrer" data-template-id="access-btn-map" class="canva-button btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255);"><i data-lucide="map-pin" style="width:16px;height:16px;"></i><span>Google Maps</span></a> <a href="https://www.google.co.jp/search?kgmid=/g/11lnrxws3p&hl=ja-JP&q=Vegetarian+food%26coffee+%E3%83%8F%E3%83%81%E3%83%89%E3%83%AATable&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/osrp/m5/1&kgs=9e3fdcbdb5f9ef1d" target="_blank" rel="noopener noreferrer" data-template-id="access-btn-reviews" class="canva-button btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255);"><i data-lucide="star" style="width:16px;height:16px;"></i><span class="flex flex-col items-start leading-tight"><span class="text-[10px] opacity-70">Google Reviews</span><span>口コミを見る</span></span></a> <a href="tel:0752010083" data-template-id="access-btn-call" class="canva-button btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2" style="background: rgb(61, 43, 31); color: rgb(255, 255, 255);"><i data-lucide="phone" style="width:16px;height:16px;"></i><span>Call</span></a> <a href="https://www.instagram.com/hachidori.table/" target="_blank" rel="noopener noreferrer" data-template-id="access-btn-ig" class="canva-button btn-coral px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2" style="background: rgb(232, 128, 106); color: rgb(255, 255, 255);"><i data-lucide="instagram" style="width:16px;height:16px;"></i><span>Instagram</span></a> <a href="https://www.instagram.com/hachidori.table/" target="_blank" rel="noopener noreferrer" data-template-id="access-btn-reserve" class="canva-button btn-coral px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2" style="background: rgb(232, 128, 106); color: rgb(255, 255, 255);"><i data-lucide="calendar" style="width:16px;height:16px;"></i><span>Reservation</span></a>
+     </div>
+    </div>
+   </section><!-- SECTION 10: FAQ -->
+   <section id="faq" class="px-6 py-16">
+    <div class="max-w-3xl mx-auto">
+     <h2 data-template-id="faq-heading" class="canva-text text-center font-bold text-2xl mb-10" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">FAQ</h2>
+     <div class="space-y-3" id="faq-list">
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-1" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">すべてヴィーガンですか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-1" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">はい。当店のお料理は100%植物性で、動物性原材料を使用していません。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-2" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">五葷は使用していますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-2" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">ネギ、玉ねぎ、ニンニク、あさつき、らっきょうは使用していません。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-3" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">グルテンフリーの料理はありますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-3" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">一部のメニューでグルテンフリーを選択できます。ご注文時にご確認ください。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-4" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">英語メニューはありますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-4" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">はい。英語メニューをご用意しています。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-5" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">繁体字中国語メニューはありますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-5" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">はい。繁体字中国語メニューをご用意しています。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-6" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">予約はできますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-6" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">ディナーは完全予約制です。前日の15時までにご予約ください。5名以上で来店する場合も、事前予約をお願いします。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-7" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">アレルギー対応はできますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-7" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">可能な範囲で対応します。ご来店前にご相談ください。</p>
+       </div>
+      </div>
+      <div class="faq-item bg-white rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between" aria-expanded="false"> <span data-template-id="faq-q-8" class="canva-text text-sm font-medium pr-4" style="color: rgb(61, 43, 31); font-weight: 600; font-style: normal; font-size: 14px;">駐車場はありますか？</span> <i data-lucide="chevron-down" class="faq-icon flex-shrink-0 transition-transform" style="width:18px;height:18px;"></i> </button>
+       <div class="faq-answer px-5 pb-4">
+        <p data-template-id="faq-a-8" class="canva-text text-sm text-gray-600" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">店舗前に2台分あります。</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main><!-- Footer -->
+  <footer data-template-id="footer-section" class="canva-footer px-6 py-12" style="background: rgb(61, 43, 31);">
+   <div class="max-w-3xl mx-auto text-center">
+    <p data-template-id="footer-name" class="canva-text font-bold text-xl mb-1" style="color: rgb(253, 251, 247); font-weight: 700; font-style: normal; font-size: 20px;">ハチドリ Table</p>
+    <p data-template-id="footer-tagline" class="canva-text text-sm opacity-80 mb-6" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 14px;">Vegetarian Food &amp; Coffee</p>
+    <p data-template-id="footer-address" class="canva-text text-sm opacity-70 mb-2" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">〒601-8471 京都府京都市南区八条通大宮西入八条町438<br>
+      <span id="footer-address-sub" class="hidden text-xs opacity-80 mt-1 inline-block"></span>
+    </p>
+    <p data-template-id="footer-tel" class="canva-text text-sm opacity-70 mb-4" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">TEL 075-201-0083</p>
+    <p data-template-id="footer-hours" class="canva-text text-sm opacity-70 mb-8" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 13px;">Lunch 11:00–14:00 ／ Dinner 17:00–19:00 Reservation Only ／ Closed on Sunday</p>
+    <div class="flex flex-wrap justify-center gap-4 mb-8"><a href="#menu" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Menu</a> <a href="https://maps.app.goo.gl/e3MHZNTWLu7jX9RPA" target="_blank" rel="noopener noreferrer" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Google Maps</a> <a href="https://www.instagram.com/hachidori.table/" target="_blank" rel="noopener noreferrer" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Instagram</a> <a href="tel:0752010083" class="text-sm opacity-80 hover:opacity-100 text-ivory underline">Call</a>
+    </div>
+    <p data-template-id="footer-copy" class="canva-text text-xs opacity-50" style="color: rgb(253, 251, 247); font-weight: 400; font-style: normal; font-size: 12px;">© Hachidori Table</p>
+   </div>
+  </footer>
+  <script>
+        if (window.lucide) lucide.createIcons();
+
+        // Mobile nav
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.add('active');
+        });
+        document.getElementById('close-nav').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.remove('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-nav').classList.remove('active');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                const isOpen = answer.classList.contains('open');
+                // Close all
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+                document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = '');
+                document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
+                if (!isOpen) {
+                    answer.classList.add('open');
+                    icon.style.transform = 'rotate(180deg)';
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Expandable About story
+        const storyToggle = document.getElementById('about-story-toggle');
+        const storyFull = document.getElementById('about-story-full');
+        const storyMore = document.querySelector('[data-template-id="about-story-more"]');
+        const storyLess = document.querySelector('[data-template-id="about-story-less"]');
+        storyToggle.addEventListener('click', () => {
+            const expanded = storyToggle.getAttribute('aria-expanded') === 'true';
+            storyToggle.setAttribute('aria-expanded', String(!expanded));
+            storyFull.classList.toggle('hidden', expanded);
+            storyMore.classList.toggle('hidden', !expanded);
+            storyLess.classList.toggle('hidden', expanded);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Language switcher
+const translations = {
+    'hero-location': {
+        en: 'About 15 min walk from Kyoto Station / 3 min walk from Toji Temple North Gate',
+        zh: '從京都站步行約15分鐘 ／ 從東寺北總門步行約3分鐘'
+    },
+    'intro-heading': {
+        en: 'Enjoy Plant-Based Meals with Confidence in Kyoto',
+        zh: '在京都，安心享用植物性餐點。'
+    },
+    'intro-text-ja': {
+        en: 'Hachidori Table is a plant-based café near Kyoto Station and Toji Temple, welcoming vegans, vegetarians, visitors with dietary needs, and travelers from abroad.\n\nOur food is made without animal-derived ingredients and without the five pungent roots (green onion, onion, garlic, chives, and shallot).\n\nGluten-free options are available for selected dishes.',
+        zh: 'Hachidori Table是一家位於京都站與東寺附近的植物性咖啡館，歡迎純素者、素食者、有飲食需求的顧客，以及來自海外的旅客。\n\n我們的料理不使用任何動物性食材，也不使用蔥、洋蔥、大蒜、韭菜、蕗蕎等五辛。\n\n部分餐點可選擇無麩質。'
+    },
+    'intro-menu-note': {
+    en: 'If you have any concerns about allergies or ingredients, please feel free to ask us.\nSome menu items contain alcohol. If this is a concern, please ask our staff before ordering.',
+    zh: '如對過敏原或食材有任何疑慮，歡迎隨時向我們詢問。\n部分餐點含有酒精成分。如您有所顧慮，請在點餐前向工作人員確認。'
+    },
+    'popular-subheading': {
+    en: 'Recommended Dishes',
+    zh: '推薦餐點'
+      },
+      'feature-1-text': {
+    en: '100% Vegan',
+    zh: '全素'
+},
+'feature-2-text': {
+    en: 'No Onion / No Garlic',
+    zh: '五辛不使用'
+},
+'feature-3-text': {
+    en: 'English Menu',
+    zh: '英文菜單'
+},
+'feature-4-text': {
+    en: 'Traditional Chinese Menu',
+    zh: '繁體中文菜單'
+},
+'feature-5-text': {
+    en: 'DAICHU Vegetarian Food Shop',
+    zh: '附設 DAICHU 素食食品商店'
+},
+
+'menu-name-ja-1': {
+    en: 'Soy Meat Cutlet Rice Bowl',
+    zh: '大豆肉炸豬排蓋飯'
+},
+'menu-name-ja-2': {
+    en: 'Sesame Ramen',
+    zh: '招牌芝麻拉麵'
+},
+'menu-name-ja-3': {
+    en: 'Curry Udon',
+    zh: '咖哩烏龍麵'
+},
+'menu-name-ja-4': {
+    en: 'Soy Meat Teriyaki Rice Bowl',
+    zh: '大豆肉照燒蓋飯'
+},
+'menu-name-ja-5': {
+    en: 'Vegetable Curry',
+    zh: '蔬菜咖哩'
+},
+
+    'menu-pdf-desc': {
+        en: 'View our menus in Japanese, English and Traditional Chinese.',
+        zh: '可查看日文、英文與繁體中文版本的菜單PDF。'
+    },
+    'menu-season-note': {
+        en: 'Menu items may change depending on the season and availability of ingredients.',
+        zh: '餐點內容可能會依季節及食材供應狀況有所調整。'
+    },
+    'about-block-2-title': {
+        en: 'The Story Behind Hachidori Table',
+        zh: 'Hachidori Table的故事'
+    },
+    'about-story-summary': {
+        en: 'The name Hachidori Table comes from Kyoto\'s Hachijō-dōri street and the hummingbird, the smallest bird in the world. In Native American culture, the hummingbird symbolizes peace, love, and happiness — a spirit we hope our café can carry.',
+        zh: 'Hachidori Table的店名，來自京都的八條通，以及世界上最小的鳥——蜂鳥。在美洲原住民文化中，蜂鳥象徵著和平、愛與幸福。我們也希望這間店能成為傳遞這份溫柔心意的地方。'
+    },
+    'about-block-2-text': {
+        en: 'The story behind the name Hachidori Table\n\nOur café is located on Hachijō-dōri in Kyoto. The name comes from two things: Hachijō-dōri, a street here in Kyoto, and the hummingbird, the smallest bird in the world.\n\nIn Native American culture, the hummingbird is a symbol of peace, love, and happiness.\n\nWe hope this café can become a place that carries the same kind of gentle spirit.\n\n———————————\n\nThe hummingbird\'s drop\n\nA folk tale passed down among indigenous peoples of South America—\n\nThe forest was on fire. All of the animals, insects, and birds in the forest rushed to escape. But one little hummingbird named Kurikindi, or Golden Bird, stayed behind.\n\nThis little bird went back and forth between water and fire, dropping a single drop of water from its beak onto the fire below.\n\nWhen the animals saw this, they began to laugh at Kurikindi. "Why are you doing that?" they asked.\n\nAnd Kurikindi replied,\n\n"I am only doing what I can do."\n\n———————————\n\nLike that hummingbird, we too should cherish the spirit of doing the best we can.\n\nOur store is not large, but we hope that by providing vegetarian meals we can make a small contribution to the health of people and the planet.\n\nFrom this place, a small drop of water…\n\n———————————',
+        zh: 'Hachidori Table名字的由來\n\n本店位於京都的八條通。店名來自兩個元素：京都的「八條通」，以及世界上最小的鳥——蜂鳥。\n\n在美洲原住民文化中，蜂鳥象徵著「和平、愛與幸福」。\n\n我們也將這份心意寄託在店名中，希望Hachidori Table也能成為傳遞這些美好事物的地方。\n\n———————————\n\n蜂鳥的一滴水……\n\n這是一則流傳於南美洲原住民族之間的故事——\n\n森林發生了火災，動物們紛紛爭先恐後地逃離。\n\n只有一隻小小的蜂鳥留了下來，在水邊與森林之間不停地來回飛翔。\n\n牠用嘴喙銜著水，一滴一滴地灑在火焰上，努力想把火撲滅。\n\n其他動物看到後笑著說：「你這樣做又有什麼用呢？」\n\n蜂鳥回答：\n\n「我只是在做我能做的事。」\n\n———————————\n\n我們也希望像這隻蜂鳥一樣，珍惜盡自己所能去行動的心意。\n\n即使力量很小，我們仍希望透過蔬食這樣的方式，做自己能做的事，為人與地球提供一個更友善的選擇。\n\n從這個地方，獻上一滴小小的水……\n\n———————————'
+    },
+    'daichu-text': {
+        en: 'Inside Hachidori Table, we also run "DAICHU Shop," a small store selling vegetarian ingredients.\n\nWe carry plant-based foods and seasonings, perfect for home use or as a Kyoto souvenir.',
+        zh: 'Hachidori Table店內也設有販售素食食材的「DAICHU Shop」。\n\n我們提供植物性食品與調味料等商品，非常適合自用，也適合作為京都伴手禮。'
+    },
+    'space-subheading': {
+        en: 'Interior & Exterior',
+        zh: '店內與外觀'
+    },
+    'access-directions': {
+        en: 'About 15 min walk from Kyoto Station\n3 min walk from Toji Temple North Gate\n2 parking spaces',
+        zh: '從京都站步行約15分鐘\n從東寺北總門步行約3分鐘\n設有2個停車位'
+    },
+    'access-hours-title': {
+        en: 'Hours',
+        zh: '營業時間'
+    },
+    'access-lunch-note': {
+        en: 'Open until 15:00 on days without dinner reservations.',
+        zh: '如當日無晚餐預約，營業至15:00。'
+    },
+    'access-dinner': {
+        en: 'Dinner 17:00–19:00 (Reservation Only)',
+        zh: '晚餐 17:00–19:00（完全預約制）'
+    },
+    'access-dinner-note': {
+        en: 'Reservations accepted until 15:00 the day before.',
+        zh: '請於前一天15:00前預約。'
+    },
+    'access-reservation-note': {
+        en: 'Groups of 5 or more require advance reservation.',
+        zh: '5人以上用餐請事先預約。'
+    },
+    'access-closed': {
+        en: 'Closed on Sunday',
+        zh: '週日公休'
+    },
+    'faq-q-1': {
+        en: 'Is everything vegan?',
+        zh: '所有餐點都是純素的嗎？'
+    },
+    'faq-a-1': {
+        en: 'Yes. All our dishes are 100% plant-based and contain no animal-derived ingredients.',
+        zh: '是的，本店所有餐點皆為100%植物性，不使用任何動物性食材。'
+    },
+    'faq-q-2': {
+        en: 'Do you use the five pungent roots (garlic, onion, etc.)?',
+        zh: '有使用五辛（蔥、蒜等）嗎？'
+    },
+    'faq-a-2': {
+        en: 'We do not use green onion, onion, garlic, chives, or shallot.',
+        zh: '我們不使用蔥、洋蔥、大蒜、韭菜、蕗蕎等五辛。'
+    },
+    'faq-q-3': {
+        en: 'Are there gluten-free dishes?',
+        zh: '有無麩質餐點嗎？'
+    },
+    'faq-a-3': {
+        en: 'Some menu items offer a gluten-free option. Please ask when ordering.',
+        zh: '部分餐點可選擇無麩質，點餐時請向我們確認。'
+    },
+    'faq-q-4': {
+        en: 'Do you have an English menu?',
+        zh: '有英文菜單嗎？'
+    },
+    'faq-a-4': {
+        en: 'Yes, an English menu is available.',
+        zh: '有的，我們備有英文菜單。'
+    },
+    'faq-q-5': {
+        en: 'Do you have a Traditional Chinese menu?',
+        zh: '有繁體中文菜單嗎？'
+    },
+    'faq-a-5': {
+        en: 'Yes, a Traditional Chinese menu is available.',
+        zh: '有的，我們備有繁體中文菜單。'
+    },
+    'faq-q-6': {
+        en: 'Can I make a reservation?',
+        zh: '可以預約嗎？'
+    },
+    'faq-a-6': {
+        en: 'Dinner is by reservation only. Please book by 15:00 the day before. Groups of 5 or more also require advance reservation.',
+        zh: '晚餐採完全預約制，請於前一天15:00前預約。5人以上用餐也請事先預約。'
+    },
+    'faq-q-7': {
+        en: 'Can you accommodate food allergies?',
+        zh: '可以協助處理食物過敏需求嗎？'
+    },
+    'faq-a-7': {
+        en: 'We will do our best to accommodate. Please contact us before your visit.',
+        zh: '我們會盡可能配合，請於來店前與我們聯絡。'
+    },
+    'faq-q-8': {
+        en: 'Is parking available?',
+        zh: '有停車場嗎？'
+    },
+    'faq-a-8': {
+        en: 'There are 2 parking spaces in front of the store.',
+        zh: '店門前設有2個停車位。'
+    },
+    'daichu-btn-shop': {
+        en: 'Online Shop',
+        zh: '線上商店'
+    }
+};
+
+        const originalHtml = {};
+        document.querySelectorAll('[data-template-id]').forEach(el => {
+            const id = el.getAttribute('data-template-id');
+            if (translations[id]) originalHtml[id] = el.innerHTML;
+        });
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+
+            document.querySelectorAll('[data-template-id]').forEach(el => {
+                const id = el.getAttribute('data-template-id');
+                if (!translations[id]) return;
+
+                if (lang === 'ja') {
+                    el.innerHTML = originalHtml[id];
+                    el.style.whiteSpace = '';
+                } else {
+                    el.textContent = translations[id][lang];
+                    el.style.whiteSpace = translations[id][lang].includes('\n') ? 'pre-line' : '';
+                }
+            });
+
+            document.querySelectorAll('.lang-btn').forEach(b => {
+                b.classList.toggle('lang-active', b.dataset.lang === lang);
+            });
+
+            // Keep the official Japanese address visible in every language.
+            // Show a smaller translated address underneath for EN / 繁中.
+            const accessAddressSub = document.getElementById('access-address-sub');
+            const footerAddressSub = document.getElementById('footer-address-sub');
+
+            const addressSubText = {
+                en: '438 Hachijo-cho, Minami-ku, Kyoto, 601-8471, Japan',
+                zh: '繁中：日本京都府京都市南區八條町438'
+            };
+
+            [accessAddressSub, footerAddressSub].forEach(el => {
+                if (!el) return;
+                if (lang === 'ja') {
+                    el.textContent = '';
+                    el.classList.add('hidden');
+                } else {
+                    el.textContent = addressSubText[lang];
+                    el.classList.remove('hidden');
+                }
+            });
+
+            document.getElementById('mobile-nav')?.classList.remove('active');
+        }
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+
+        setLanguage('ja');
+    </script>
+ 
+</body></html>
