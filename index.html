@@ -64,7 +64,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
 
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -133,6 +133,10 @@
             z-index: 10;
         }
 
+        [data-template-id="hero-title"] {
+            font-family: 'Kiwi Maru', serif !important;
+        }
+
         /* Popular Menu: desktop keeps 224px, mobile becomes 180px */
         .popular-menu-image {
             width: 100%;
@@ -147,6 +151,12 @@
             .hero-content {
                 transform: translateY(8%);
             }
+
+            /* Smartphone hero title: about 15% smaller */
+            [data-template-id="hero-title"] {
+                font-size: 36px !important;
+            }
+
             .popular-menu-image {
                 height: 180px;
             }
@@ -293,7 +303,7 @@
     </div>
   </div>
 </section>
-   </section><!-- SECTION 2: About intro -->
+   <!-- SECTION 2: About intro -->
    <section class="px-6 py-16 max-w-3xl mx-auto text-center">
 <div class="flex justify-center mb-8">
   <img
@@ -734,10 +744,10 @@ const translations = {
     'menu-pdf-desc': {
         en: 'View our menus in Japanese, English and Traditional Chinese.',
         zh: '可查看日文、英文與繁體中文版本的菜單PDF。'
+    },
     'menu-season-note': {
-    en: 'Menu items may change depending on the season and availability of ingredients.',
-    zh: '餐點內容可能會依季節及食材供應狀況有所調整。'
-},
+        en: 'Menu items may change depending on the season and availability of ingredients.',
+        zh: '餐點內容可能會依季節及食材供應狀況有所調整。'
     },
     'about-block-2-title': {
         en: 'The Story Behind Hachidori Table',
