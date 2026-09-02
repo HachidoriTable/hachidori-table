@@ -178,48 +178,68 @@
     <div
       class="bg-white/75 backdrop-blur-sm rounded-xl px-6 py-4 mb-8 shadow-sm"
     >
-      <p
-        data-template-id="hero-badge-1"
-        class="canva-text font-bold text-base"
-        style="
-          color: rgb(61, 43, 31);
-          font-weight: 700;
-          font-size: 15px;
-        "
-      >
-        100%　VEGAN
-      </p>
-    </div>
+<!-- VEGAN BADGE -->
+<div
+  class="rounded-full px-8 py-4 mb-8"
+  style="
+    background: rgba(255,255,255,.90);
+    border: 4px solid #79A95B;
+    box-shadow: 0 2px 8px rgba(61,43,31,.06);
+  "
+>
+  <p
+    data-template-id="hero-badge-1"
+    class="canva-text font-bold"
+    style="
+      color: rgb(61,43,31);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: .05em;
+      margin: 0;
+    "
+  >
+    100%　VEGAN
+  </p>
+</div>
 
-    <div class="flex gap-3">
-      <a
-        href="#menu"
-        data-template-id="hero-btn-menu"
-        class="canva-button btn-coral px-6 py-3 rounded-full font-medium text-sm"
-        style="
-          background: rgb(232, 128, 106);
-          color: rgb(255, 255, 255);
-          font-weight: 600;
-          font-size: 16px;
-        "
-      >
-        View Menu
-      </a>
+<!-- HERO BUTTONS -->
+<div class="flex gap-3">
 
-      <a
-        href="#access"
-        data-template-id="hero-btn-access"
-        class="canva-button bg-white text-brown px-6 py-3 rounded-full font-medium text-sm shadow-sm"
-        style="
-          background: rgb(255, 255, 255);
-          color: rgb(61, 43, 31);
-          font-weight: 600;
-          font-size: 16px;
-        "
-      >
-        Access
-      </a>
-    </div>
+  <!-- View Menu -->
+  <a
+    href="#menu"
+    data-template-id="hero-btn-menu"
+    class="canva-button btn-coral px-6 py-3 rounded-full font-medium text-sm"
+    style="
+      background: rgb(232,128,106);
+      color: rgb(255,255,255);
+      font-weight: 600;
+      font-size: 16px;
+    "
+  >
+    View Menu
+  </a>
+
+  <!-- Access -->
+  <a
+    href="#access"
+    data-template-id="hero-btn-access"
+    class="canva-button px-6 py-3 rounded-full font-medium text-sm shadow-sm inline-flex items-center gap-2"
+    style="
+      background: #FCE5D5;
+      color: rgb(61,43,31);
+      font-weight: 600;
+      font-size: 16px;
+    "
+  >
+    <i
+      data-lucide="map-pin"
+      style="width:17px;height:17px;"
+    ></i>
+    <span>Access</span>
+  </a>
+
+</div>
 
   </div>
 </section>
