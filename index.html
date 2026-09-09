@@ -326,66 +326,89 @@
   </div>
 </section>
    <!-- SECTION 2: About intro -->
-   <section class="px-6 py-16 max-w-3xl mx-auto text-center">
-<div class="flex justify-center mb-8">
-  <img
-    src="logo.png"
-    alt="ハチドリ Table ロゴ"
-    class="w-36 md:w-40 h-auto"
-    loading="lazy"
-  >
-</div>
+<section class="px-6 py-14 md:py-20 bg-ivory">
 
-<h2
-  data-template-id="intro-heading"
-  class="canva-text font-bold text-2xl md:text-3xl mb-2"
-  style="color: rgb(61, 43, 31); font-weight: 700;"
->
-  <span class="md:hidden">
-    京都で安心して<br>
-    植物性のお食事を。
-  </span>
-  <span class="hidden md:inline">
-    京都で安心して植物性のお食事を。
-  </span>
-</h2>
+  <style>
+    /* INTRO スマホ表示調整 */
+    @media (max-width: 767px) {
+      .hachidori-intro-text {
+        font-size: 15px;
+        line-height: 1.65;
+        letter-spacing: -0.02em;
+      }
 
-<p
-  data-template-id="intro-heading-en"
-  class="canva-text text-sm text-gray-500 mb-8 hidden"
-  style="color: rgb(92, 80, 71); font-weight: 400; font-size: 13px;"
->
-  Plant-Based Food You Can Enjoy With Confidence in Kyoto
-</p>
+      .hachidori-intro-note {
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: -0.02em;
+      }
 
-<p
-  data-template-id="intro-text-ja"
-  class="canva-text text-base leading-relaxed mb-6"
->
-  ヴィーガン・ベジタリアンの方はもちろん、<br>
-  食事に配慮が必要な方や、<br class="md:hidden">
-  海外から京都を訪れる方にも、<br>
-  安心して植物性のお食事を<br class="md:hidden">
-  お楽しみいただけます。<br><br>
+      .hachidori-intro-block {
+        margin-bottom: 28px;
+      }
+    }
+  </style>
 
-  当店のお料理は100%植物性。<br>
-  ネギ、玉ねぎ、ニンニク、あさつき、<br class="md:hidden">
-  らっきょうの五葷を使用していません。<br><br>
 
-  一部、グルテンフリーを選べる<br class="md:hidden">
-  メニューもご用意しています。
-</p>
+  <div class="max-w-3xl mx-auto">
 
-<p
-  data-template-id="intro-menu-note"
-  class="canva-text text-sm leading-relaxed mb-6 text-left md:text-center"
-  style="color: rgb(61, 43, 31); font-weight: 400; font-size: 14px;"
->
-  アレルギーや原材料について気になる点がある場合は、<br class="md:hidden">
-  ご相談ください。<br>
-  一部のメニューにはアルコール成分が含まれています。<br class="md:hidden">
-  気になる方は、ご注文前にスタッフへご確認ください。
-</p>
+    <!-- TITLE -->
+    <h2
+      class="font-bold text-3xl md:text-4xl text-center mb-8 md:mb-10 leading-snug"
+      style="color: rgb(61, 43, 31);"
+    >
+      京都で安心して<br class="md:hidden">
+      植物性のお食事を。
+    </h2>
+
+
+    <!-- TEXT 01 -->
+    <p
+      class="hachidori-intro-text hachidori-intro-block text-center md:text-lg mb-8"
+      style="color: rgb(61, 43, 31);"
+    >
+      ヴィーガン・ベジタリアンの方はもちろん、<br>
+      食事に配慮が必要な方や、<br class="md:hidden">
+      海外から京都を訪れる方にも、<br>
+      安心して植物性のお食事を<br class="md:hidden">
+      お楽しみいただけます。
+    </p>
+
+
+    <!-- TEXT 02 -->
+    <p
+      class="hachidori-intro-text hachidori-intro-block text-center md:text-lg mb-8"
+      style="color: rgb(61, 43, 31);"
+    >
+      当店のお料理は100%植物性。<br>
+      ネギ、玉ねぎ、ニンニク、あさつき、<br class="md:hidden">
+      らっきょうの五葷を使用していません。
+    </p>
+
+
+    <!-- TEXT 03 -->
+    <p
+      class="hachidori-intro-text hachidori-intro-block text-center md:text-lg mb-8"
+      style="color: rgb(61, 43, 31);"
+    >
+      一部、グルテンフリーを選べる<br class="md:hidden">
+      メニューもご用意しています。
+    </p>
+
+
+    <!-- NOTE -->
+    <p
+      class="hachidori-intro-note text-left md:text-base"
+      style="color: rgb(61, 43, 31);"
+    >
+      アレルギーや原材料について気になる点がある場合は、ご相談ください。<br>
+      一部のメニューにはアルコール成分が含まれています。<br>
+      気になる方は、ご注文前にスタッフへご確認ください。
+    </p>
+
+  </div>
+
+</section>
     <p data-template-id="intro-text-en" class="canva-text text-sm leading-relaxed text-gray-600 text-left md:text-center hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Hachidori Table is a plant-based café near Kyoto Station and Toji Temple.
 
 Our food is made without animal-derived ingredients and without the five pungent roots, including garlic and onion.
