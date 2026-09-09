@@ -163,7 +163,27 @@
                 height: 180px;
             }
         }
-    </style>
+/* INTRO：スマホ表示調整 */
+@media (max-width: 767px) {
+    [data-template-id="intro-heading"] {
+        font-size: 24px !important;
+        line-height: 1.55 !important;
+        letter-spacing: -0.03em !important;
+    }
+
+    [data-template-id="intro-text-ja"] {
+        font-size: 15px !important;
+        line-height: 1.9 !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    [data-template-id="intro-menu-note"] {
+        font-size: 14px !important;
+        line-height: 1.9 !important;
+        letter-spacing: -0.02em !important;
+    }
+}
+  </style>
 
 </head>
  <body id="top" data-template-id="__page-root" class="bg-ivory min-h-screen" style="background: rgb(253, 251, 247);"><!-- Header -->
@@ -316,22 +336,55 @@
   >
 </div>
 
-  <!-- 今ある「京都で、安心して〜」など -->
-    <h2 data-template-id="intro-heading" class="canva-text font-bold text-2xl md:text-3xl mb-2" style="color: rgb(61, 43, 31); font-weight: 700; font-style: normal; font-size: 24px;">京都で安心して植物性のお食事を。</h2>
-    <p data-template-id="intro-heading-en" class="canva-text text-sm text-gray-500 mb-8 hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 13px;">Plant-Based Food You Can Enjoy With Confidence in Kyoto</p>
-<p data-template-id="intro-text-ja" class="canva-text text-base leading-relaxed mb-6">
-ヴィーガン・ベジタリアンの方はもちろん、<br>
-食事に配慮が必要な方や、海外から京都を訪れる方にも、<br>
-安心して植物性のお食事を楽しんでいただけるカフェです。<br><br>
+<h2
+  data-template-id="intro-heading"
+  class="canva-text font-bold text-2xl md:text-3xl mb-2"
+  style="color: rgb(61, 43, 31); font-weight: 700;"
+>
+  <span class="md:hidden">
+    京都で安心して<br>
+    植物性のお食事を。
+  </span>
+  <span class="hidden md:inline">
+    京都で安心して植物性のお食事を。
+  </span>
+</h2>
 
-当店のお料理は100%植物性。<br>
-ネギ、玉ねぎ、ニンニク、あさつき、らっきょうの五葷を使用していません。<br><br>
-
-一部、グルテンフリーを選べるメニューもご用意しています。
+<p
+  data-template-id="intro-heading-en"
+  class="canva-text text-sm text-gray-500 mb-8 hidden"
+  style="color: rgb(92, 80, 71); font-weight: 400; font-size: 13px;"
+>
+  Plant-Based Food You Can Enjoy With Confidence in Kyoto
 </p>
-    <p data-template-id="intro-menu-note" class="canva-text text-sm leading-relaxed mb-6 text-left md:text-center" style="color: rgb(61, 43, 31); font-weight: 400; font-style: normal; font-size: 14px;">
-アレルギーや原材料について気になる点がある場合は、ご相談ください。<br>
-一部のメニューにはアルコール成分が含まれています。気になる方は、ご注文前にスタッフへご確認ください。
+
+<p
+  data-template-id="intro-text-ja"
+  class="canva-text text-base leading-relaxed mb-6"
+>
+  ヴィーガン・ベジタリアンの方はもちろん、<br>
+  食事に配慮が必要な方や、<br class="md:hidden">
+  海外から京都を訪れる方にも、<br>
+  安心して植物性のお食事を<br class="md:hidden">
+  お楽しみいただけます。<br><br>
+
+  当店のお料理は100%植物性。<br>
+  ネギ、玉ねぎ、ニンニク、あさつき、<br class="md:hidden">
+  らっきょうの五葷を使用していません。<br><br>
+
+  一部、グルテンフリーを選べる<br class="md:hidden">
+  メニューもご用意しています。
+</p>
+
+<p
+  data-template-id="intro-menu-note"
+  class="canva-text text-sm leading-relaxed mb-6 text-left md:text-center"
+  style="color: rgb(61, 43, 31); font-weight: 400; font-size: 14px;"
+>
+  アレルギーや原材料について気になる点がある場合は、<br class="md:hidden">
+  ご相談ください。<br>
+  一部のメニューにはアルコール成分が含まれています。<br class="md:hidden">
+  気になる方は、ご注文前にスタッフへご確認ください。
 </p>
     <p data-template-id="intro-text-en" class="canva-text text-sm leading-relaxed text-gray-600 text-left md:text-center hidden" style="color: rgb(92, 80, 71); font-weight: 400; font-style: normal; font-size: 14px;">Hachidori Table is a plant-based café near Kyoto Station and Toji Temple.
 
