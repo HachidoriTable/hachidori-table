@@ -145,12 +145,52 @@
     }
 
     .nav-overlay {
-      display: none;
-    }
+  display: none;
+}
 
-    .nav-overlay.active {
-      display: flex;
-    }
+.nav-overlay.active {
+  display: flex;
+}
+
+#mobile-nav {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background: #fff;
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#mobile-nav .mobile-nav-inner {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 90px 24px 60px;
+  margin: 0 auto;
+}
+
+#mobile-nav .nav-link {
+  display: block;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#mobile-nav .mobile-lang-area {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e0da;
+  text-align: center;
+}
 
     .lang-btn {
       background-color: transparent;
@@ -395,7 +435,7 @@
       <button
         type="button"
         class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium"
-        onclick="document.getElementById('mobile-nav').classList.add('active')">
+        onclick="openMobileNav()"
         Language
       </button>
 
@@ -414,17 +454,22 @@
 
     </div>
   </div>
+</header>
 
-  <div
-    id="mobile-nav"
-    class="nav-overlay fixed inset-0 bg-white z-50 flex-col items-center justify-center gap-8 text-lg">
+<!-- MOBILE NAV：headerの外に置く -->
+<div
+  id="mobile-nav"
+  class="nav-overlay"
+  aria-hidden="true">
 
-    <button
-      id="close-nav"
-      class="absolute top-4 right-4 p-2"
-      aria-label="閉じる">
-      <i data-lucide="x" style="width:28px;height:28px;"></i>
-    </button>
+  <button
+    id="close-nav"
+    class="absolute top-5 right-5 p-2"
+    aria-label="閉じる">
+    <i data-lucide="x" style="width:28px;height:28px;"></i>
+  </button>
+
+  <div class="mobile-nav-inner">
 
     <a href="#menu" class="nav-link text-brown font-medium">
       Menu
@@ -446,7 +491,7 @@
       FAQ
     </a>
 
-    <div class="pt-5 mt-2 border-t border-gray-200 w-56 text-center">
+    <div class="mobile-lang-area">
 
       <p class="text-xs tracking-[0.18em] text-gray-400 mb-4">
         LANGUAGE
@@ -479,6 +524,7 @@
     </div>
 
   </div>
+</div>
 </header>
 
 <main>
@@ -1311,23 +1357,28 @@
     lucide.createIcons();
   }
 
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
-  const closeNav = document.getElementById('close-nav');
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobile-nav');
+const closeNav = document.getElementById('close-nav');
 
-  hamburger?.addEventListener('click', () => {
+function openMobileNav() {
     mobileNav.classList.add('active');
-  });
+    mobileNav.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
 
-  closeNav?.addEventListener('click', () => {
+function closeMobileNav() {
     mobileNav.classList.remove('active');
-  });
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
 
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-    });
-  });
+hamburger?.addEventListener('click', openMobileNav);
+closeNav?.addEventListener('click', closeMobileNav);
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileNav);
+});
 
 
   document.querySelectorAll('.faq-toggle').forEach(btn => {
