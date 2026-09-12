@@ -44,7 +44,6 @@
   <meta name="description" content="京都駅から徒歩約15分、東寺北総門から徒歩約3分。ハチドリTableは100%植物性・五葷不使用のヴィーガン・ベジタリアン対応カフェです。一部グルテンフリー対応。英語・繁體中文メニューあり。">
 
   <meta name="robots" content="index, follow">
-
   <link rel="canonical" href="https://hachidoritable.github.io/hachidori-table/">
 
   <meta property="og:type" content="website">
@@ -87,7 +86,7 @@
     body {
       font-family: 'DM Sans', sans-serif;
       color: var(--brown);
-      padding-bottom: 80px;
+      padding-bottom: 82px;
     }
 
     section[id] {
@@ -152,10 +151,6 @@
       display: flex;
     }
 
-    .about-story-copy {
-      letter-spacing: 0.025em;
-    }
-
     .lang-btn {
       background-color: transparent;
       color: var(--gray);
@@ -168,7 +163,6 @@
       border-color: var(--brown);
     }
 
-    /* HERO */
     .hero-section {
       position: relative;
       width: 100%;
@@ -213,7 +207,6 @@
       object-fit: cover;
     }
 
-    /* RESERVATION FIXED BUTTON */
     .reservation-fixed {
       position: fixed;
       right: 18px;
@@ -237,7 +230,6 @@
       background: #d4705c;
     }
 
-    /* RESERVATION MODAL */
     .reservation-modal {
       display: none;
       position: fixed;
@@ -376,21 +368,19 @@
 
 <body id="top" class="bg-ivory min-h-screen">
 
-<!-- HEADER -->
 <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
   <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
 
-    <a href="#top"
-       class="text-lg font-bold text-brown">
+    <a href="#top" class="text-lg font-bold text-brown">
       ハチドリ Table
     </a>
 
     <nav class="hidden md:flex gap-6 text-sm items-center">
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#daichu">DAICHU Shop</a>
-      <a href="#access">Access</a>
-      <a href="#faq">FAQ</a>
+      <a href="#menu" class="hover:text-coral transition">Menu</a>
+      <a href="#about" class="hover:text-coral transition">About</a>
+      <a href="#daichu" class="hover:text-coral transition">DAICHU Shop</a>
+      <a href="#access" class="hover:text-coral transition">Access</a>
+      <a href="#faq" class="hover:text-coral transition">FAQ</a>
 
       <div class="flex gap-1 ml-2 border-l border-gray-200 pl-4">
         <button type="button" class="lang-btn text-xs px-2 py-1 rounded-full font-medium" data-lang="ja">JA</button>
@@ -399,51 +389,99 @@
       </div>
     </nav>
 
-    <div class="flex md:hidden gap-2">
-      <button type="button"
-              class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium"
-              onclick="document.getElementById('mobile-nav').classList.add('active')">
+    <div class="flex md:hidden gap-2 items-center">
+
+      <button
+        type="button"
+        class="btn-coral text-xs px-3 py-1.5 rounded-full font-medium"
+        onclick="document.getElementById('mobile-nav').classList.add('active')">
         Language
       </button>
 
-      <a href="#access"
-         class="btn-brown text-xs px-3 py-1.5 rounded-full font-medium">
+      <a
+        href="#access"
+        class="btn-brown text-xs px-3 py-1.5 rounded-full font-medium">
         Access
       </a>
 
-      <button id="hamburger" class="ml-2 p-1" aria-label="メニューを開く">
+      <button
+        id="hamburger"
+        class="ml-1 p-1"
+        aria-label="メニューを開く">
         <i data-lucide="menu" style="width:22px;height:22px;"></i>
       </button>
+
     </div>
   </div>
 
-  <!-- MOBILE NAV -->
-  <div id="mobile-nav"
-       class="nav-overlay fixed inset-0 bg-white z-50 flex-col items-center justify-center gap-8 text-lg">
+  <div
+    id="mobile-nav"
+    class="nav-overlay fixed inset-0 bg-white z-50 flex-col items-center justify-center gap-8 text-lg">
 
-    <button id="close-nav"
-            class="absolute top-4 right-4 p-2"
-            aria-label="閉じる">
+    <button
+      id="close-nav"
+      class="absolute top-4 right-4 p-2"
+      aria-label="閉じる">
       <i data-lucide="x" style="width:28px;height:28px;"></i>
     </button>
 
-    <a href="#menu" class="nav-link font-medium">Menu</a>
-    <a href="#about" class="nav-link font-medium">About</a>
-    <a href="#daichu" class="nav-link font-medium">DAICHU Shop</a>
-    <a href="#access" class="nav-link font-medium">Access</a>
-    <a href="#faq" class="nav-link font-medium">FAQ</a>
+    <a href="#menu" class="nav-link text-brown font-medium">
+      Menu
+    </a>
 
-    <div class="flex gap-2 mt-4">
-      <button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="ja">JA</button>
-      <button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="en">EN</button>
-      <button type="button" class="lang-btn text-sm px-4 py-2 rounded-full font-medium" data-lang="zh">繁中</button>
+    <a href="#about" class="nav-link text-brown font-medium">
+      About
+    </a>
+
+    <a href="#daichu" class="nav-link text-brown font-medium">
+      DAICHU Shop
+    </a>
+
+    <a href="#access" class="nav-link text-brown font-medium">
+      Access
+    </a>
+
+    <a href="#faq" class="nav-link text-brown font-medium">
+      FAQ
+    </a>
+
+    <div class="pt-5 mt-2 border-t border-gray-200 w-56 text-center">
+
+      <p class="text-xs tracking-[0.18em] text-gray-400 mb-4">
+        LANGUAGE
+      </p>
+
+      <div class="flex gap-2 justify-center">
+
+        <button
+          type="button"
+          class="lang-btn text-sm px-4 py-2 rounded-full font-medium"
+          data-lang="ja">
+          JA
+        </button>
+
+        <button
+          type="button"
+          class="lang-btn text-sm px-4 py-2 rounded-full font-medium"
+          data-lang="en">
+          EN
+        </button>
+
+        <button
+          type="button"
+          class="lang-btn text-sm px-4 py-2 rounded-full font-medium"
+          data-lang="zh">
+          繁中
+        </button>
+
+      </div>
     </div>
+
   </div>
 </header>
 
 <main>
 
-<!-- 01 HERO -->
 <section class="hero-section">
 
   <picture class="hero-picture">
@@ -467,8 +505,9 @@
       ハチドリ Table
     </h1>
 
-    <p class="text-lg md:text-xl mb-6"
-       style="font-weight:500;text-shadow:0 1px 3px rgba(255,255,255,.9);">
+    <p
+      class="text-lg md:text-xl mb-6"
+      style="font-weight:500;text-shadow:0 1px 3px rgba(255,255,255,.9);">
       Vegetarian Food &amp; Coffee
     </p>
 
@@ -479,25 +518,29 @@
       京都駅から徒歩約15分 ／ 東寺北総門から徒歩約3分
     </p>
 
-    <div class="rounded-full px-8 py-4 mb-8"
-         style="border:4px solid #79A95B;">
-      <p class="font-bold"
-         style="font-size:16px;letter-spacing:.05em;margin:0;">
+    <div
+      class="rounded-full px-8 py-4 mb-8"
+      style="border:4px solid #79A95B;">
+      <p
+        class="font-bold"
+        style="font-size:16px;letter-spacing:.05em;margin:0;">
         100% VEGAN
       </p>
     </div>
 
     <div class="flex gap-3">
 
-      <a href="#menu"
-         class="px-6 py-3 rounded-full font-medium text-sm"
-         style="background:#E8806A;color:white;font-size:16px;">
+      <a
+        href="#menu"
+        class="px-6 py-3 rounded-full font-medium text-sm"
+        style="background:#E8806A;color:white;font-size:16px;">
         View Menu
       </a>
 
-      <a href="#access"
-         class="px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2"
-         style="background:#FCE5D5;font-size:16px;">
+      <a
+        href="#access"
+        class="px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2"
+        style="background:#FCE5D5;font-size:16px;">
         <i data-lucide="map-pin" style="width:17px;height:17px;"></i>
         Access
       </a>
@@ -506,7 +549,6 @@
   </div>
 </section>
 
-<!-- 02 INTRO -->
 <section class="px-6 py-14 md:py-20 bg-ivory">
 
   <div class="max-w-3xl mx-auto">
@@ -540,7 +582,6 @@
   </div>
 </section>
 
-<!-- 03 FEATURES -->
 <section class="px-6 py-12 bg-white">
 
   <div class="max-w-2xl mx-auto">
@@ -549,30 +590,22 @@
 
       <div class="flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]">
         <i data-lucide="leaf" class="text-green mb-3" style="width:28px;height:28px;"></i>
-        <span data-template-id="feature-1-text" class="text-sm font-medium">
-          100%植物性
-        </span>
+        <span data-template-id="feature-1-text" class="text-sm font-medium">100%植物性</span>
       </div>
 
       <div class="flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]">
         <i data-lucide="circle-off" class="text-green mb-3" style="width:28px;height:28px;"></i>
-        <span data-template-id="feature-2-text" class="text-sm font-medium">
-          五葷不使用
-        </span>
+        <span data-template-id="feature-2-text" class="text-sm font-medium">五葷不使用</span>
       </div>
 
       <div class="flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]">
         <i data-lucide="languages" class="text-green mb-3" style="width:28px;height:28px;"></i>
-        <span data-template-id="feature-3-text" class="text-sm font-medium">
-          英語メニュー
-        </span>
+        <span data-template-id="feature-3-text" class="text-sm font-medium">英語メニュー</span>
       </div>
 
       <div class="flex flex-col items-center justify-center text-center p-5 rounded-xl bg-ivory min-h-[120px]">
         <i data-lucide="languages" class="text-green mb-3" style="width:28px;height:28px;"></i>
-        <span data-template-id="feature-4-text" class="text-sm font-medium">
-          繁體中文メニュー
-        </span>
+        <span data-template-id="feature-4-text" class="text-sm font-medium">繁體中文メニュー</span>
       </div>
 
     </div>
@@ -589,7 +622,6 @@
   </div>
 </section>
 
-<!-- 04 POPULAR MENU -->
 <section id="menu" class="px-6 py-16">
 
   <div class="max-w-4xl mx-auto">
@@ -609,9 +641,7 @@
       <div class="rounded-2xl overflow-hidden shadow-sm bg-white">
         <img class="popular-menu-image" loading="lazy" src="soykatsu.jpg" alt="ハチドリTableの大豆ミートカツ丼">
         <div class="p-4">
-          <h3 data-template-id="menu-name-ja-1" class="font-bold mb-1" style="font-size:19px;">
-            大豆ミートカツ丼
-          </h3>
+          <h3 data-template-id="menu-name-ja-1" class="font-bold mb-1" style="font-size:19px;">大豆ミートカツ丼</h3>
           <p class="text-sm text-gray-500 mb-2">Soy Meat Cutlet Rice Bowl</p>
           <div class="flex flex-wrap gap-1">
             <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span>
@@ -624,9 +654,7 @@
       <div class="rounded-2xl overflow-hidden shadow-sm bg-white">
         <img class="popular-menu-image" loading="lazy" src="ramen.JPG" alt="ハチドリTableのヴィーガン胡麻ラーメン">
         <div class="p-4">
-          <h3 data-template-id="menu-name-ja-2" class="font-bold mb-1" style="font-size:19px;">
-            胡麻ラーメン
-          </h3>
+          <h3 data-template-id="menu-name-ja-2" class="font-bold mb-1" style="font-size:19px;">胡麻ラーメン</h3>
           <p class="text-sm text-gray-500 mb-2">Sesame Ramen</p>
           <div class="flex flex-wrap gap-1">
             <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span>
@@ -639,9 +667,7 @@
       <div class="rounded-2xl overflow-hidden shadow-sm bg-white">
         <img class="popular-menu-image" loading="lazy" src="curryudon.JPG" alt="ハチドリTableのヴィーガンカレーうどん">
         <div class="p-4">
-          <h3 data-template-id="menu-name-ja-3" class="font-bold mb-1" style="font-size:19px;">
-            カレーうどん
-          </h3>
+          <h3 data-template-id="menu-name-ja-3" class="font-bold mb-1" style="font-size:19px;">カレーうどん</h3>
           <p class="text-sm text-gray-500 mb-2">Curry Udon</p>
           <div class="flex flex-wrap gap-1">
             <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span>
@@ -654,9 +680,7 @@
       <div class="rounded-2xl overflow-hidden shadow-sm bg-white">
         <img class="popular-menu-image" loading="lazy" src="soyteriyaki.JPG" alt="ハチドリTableの大豆ミート照り焼き丼">
         <div class="p-4">
-          <h3 data-template-id="menu-name-ja-4" class="font-bold mb-1" style="font-size:19px;">
-            大豆ミート照り焼き丼
-          </h3>
+          <h3 data-template-id="menu-name-ja-4" class="font-bold mb-1" style="font-size:19px;">大豆ミート照り焼き丼</h3>
           <p class="text-sm text-gray-500 mb-2">Soy Meat Teriyaki Rice Bowl</p>
           <div class="flex flex-wrap gap-1">
             <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span>
@@ -669,9 +693,7 @@
       <div class="rounded-2xl overflow-hidden shadow-sm bg-white md:col-span-2 md:max-w-md md:mx-auto">
         <img class="popular-menu-image" loading="lazy" src="vegetablecurry.JPG" alt="ハチドリTableの植物性野菜カレー">
         <div class="p-4">
-          <h3 data-template-id="menu-name-ja-5" class="font-bold mb-1" style="font-size:19px;">
-            野菜カレー
-          </h3>
+          <h3 data-template-id="menu-name-ja-5" class="font-bold mb-1" style="font-size:19px;">野菜カレー</h3>
           <p class="text-sm text-gray-500 mb-2">Vegetable Curry</p>
           <div class="flex flex-wrap gap-1">
             <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full">Vegan</span>
@@ -685,7 +707,6 @@
   </div>
 </section>
 
-<!-- 05 MENU PDF -->
 <section id="menu-section" class="px-6 py-16 bg-white">
 
   <div class="max-w-2xl mx-auto text-center">
@@ -694,22 +715,15 @@
       OUR MENU
     </p>
 
-    <h2
-      data-template-id="menu-pdf-heading"
-      class="font-bold text-2xl md:text-3xl mb-5">
+    <h2 data-template-id="menu-pdf-heading" class="font-bold text-2xl md:text-3xl mb-5">
       メニュー
     </h2>
 
-    <p
-      data-template-id="menu-pdf-desc"
-      class="text-sm text-gray-600 mb-2">
+    <p data-template-id="menu-pdf-desc" class="text-sm text-gray-600 mb-2">
       メニューはPDFでご覧いただけます。
     </p>
 
-    <p
-      data-template-id="menu-season-note"
-      class="text-xs text-gray-500 mb-8"
-      style="line-height:1.8;">
+    <p data-template-id="menu-season-note" class="text-xs text-gray-500 mb-8" style="line-height:1.8;">
       季節や仕入れ状況により、メニュー内容が変更になる場合があります。
     </p>
 
@@ -740,7 +754,6 @@
   </div>
 </section>
 
-<!-- 06 COFFEE -->
 <section id="coffee" class="px-6 py-20 md:py-24 bg-ivory">
 
   <div class="max-w-4xl mx-auto">
@@ -748,10 +761,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
 
       <div>
-        <img src="coffee.JPG"
-             alt="滋賀県高島市マキノで自家焙煎されるNAMIKI COFFEE"
-             class="w-full h-auto rounded-2xl object-cover"
-             loading="lazy">
+        <img
+          src="coffee.JPG"
+          alt="滋賀県高島市マキノで自家焙煎されるNAMIKI COFFEE"
+          class="w-full h-auto rounded-2xl object-cover"
+          loading="lazy">
       </div>
 
       <div>
@@ -760,18 +774,15 @@
           OUR COFFEE
         </p>
 
-        <h2 data-template-id="coffee-heading"
-            class="font-bold text-2xl md:text-3xl mb-7">
+        <h2 data-template-id="coffee-heading" class="font-bold text-2xl md:text-3xl mb-7">
           自家焙煎 NAMIKI COFFEE
         </h2>
 
-        <p data-template-id="coffee-text-1"
-           class="text-sm leading-loose mb-5">
+        <p data-template-id="coffee-text-1" class="text-sm leading-loose mb-5">
           滋賀県高島市・マキノの自然の中で、生豆の種類に合わせて焙煎時間や火力を調整し、丁寧に焙煎される「NAMIKI COFFEE」。
         </p>
 
-        <p data-template-id="coffee-text-2"
-           class="text-sm leading-loose">
+        <p data-template-id="coffee-text-2" class="text-sm leading-loose">
           ハチドリTableでは、煎りたての豆から淹れる一杯をお楽しみいただけます。
         </p>
 
@@ -780,7 +791,6 @@
   </div>
 </section>
 
-<!-- 07 ABOUT -->
 <section id="about" class="px-6 py-20 md:py-28 bg-white">
 
   <div class="max-w-4xl mx-auto">
@@ -788,10 +798,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
 
       <div>
-        <img src="cafe.JPG"
-             alt="ハチドリTableの店内"
-             class="w-full h-auto rounded-2xl object-cover"
-             loading="lazy">
+        <img
+          src="cafe.JPG"
+          alt="ハチドリTableの店内"
+          class="w-full h-auto rounded-2xl object-cover"
+          loading="lazy">
       </div>
 
       <div>
@@ -800,31 +811,28 @@
           ABOUT HACHIDORI TABLE
         </p>
 
-        <h2 data-template-id="about-heading"
-            class="font-bold text-2xl md:text-3xl mb-7">
+        <h2 data-template-id="about-heading" class="font-bold text-2xl md:text-3xl mb-7">
           ハチドリTableに込めた想い
         </h2>
 
-        <p data-template-id="about-summary-1"
-           class="text-sm leading-loose mb-6">
+        <p data-template-id="about-summary-1" class="text-sm leading-loose mb-6">
           ハチドリTableという名前は、京都の八条通りと、世界で一番小さな鳥「ハチドリ」に由来します。
         </p>
 
-        <p data-template-id="about-summary-2"
-           class="text-sm leading-loose mb-6">
+        <p data-template-id="about-summary-2" class="text-sm leading-loose mb-6">
           ネイティブアメリカンの文化では、ハチドリは平和、愛、幸福の象徴です。
         </p>
 
-        <p data-template-id="about-summary-3"
-           class="text-sm leading-loose mb-8">
+        <p data-template-id="about-summary-3" class="text-sm leading-loose mb-8">
           私たちも、そんなやさしい場所でありたいと願っています。
         </p>
 
-        <button id="about-story-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="about-story-full"
-                class="btn-brown px-5 py-2.5 rounded-full text-sm font-medium">
+        <button
+          id="about-story-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="about-story-full"
+          class="btn-brown px-5 py-2.5 rounded-full text-sm font-medium">
 
           <span data-template-id="about-story-more">
             もっと読む
@@ -839,11 +847,13 @@
       </div>
     </div>
 
-    <div id="about-story-full"
-         class="hidden border-t border-stone-200 mt-12 pt-10 md:mt-16 md:pt-12">
+    <div
+      id="about-story-full"
+      class="hidden border-t border-stone-200 mt-12 pt-10 md:mt-16 md:pt-12">
 
-      <p data-template-id="about-block-2-text"
-         class="text-sm leading-loose whitespace-pre-line max-w-3xl mx-auto">ハチドリTable の名に込めた想い
+      <p
+        data-template-id="about-block-2-text"
+        class="text-sm leading-loose whitespace-pre-line max-w-3xl mx-auto">ハチドリTable の名に込めた想い
 
 当店は京都の八条通りにあります。
 お店のある“八条通り”と
@@ -887,7 +897,6 @@
   </div>
 </section>
 
-<!-- 08 DAICHU -->
 <section id="daichu" class="px-6 py-20 bg-ivory">
 
   <div class="max-w-4xl mx-auto">
@@ -896,41 +905,31 @@
       DAICHU SHOP
     </p>
 
-    <h2 data-template-id="daichu-title"
-        class="font-bold text-2xl md:text-3xl mb-8 text-center">
+    <h2 data-template-id="daichu-title" class="font-bold text-2xl md:text-3xl mb-8 text-center">
       ベジタリアン食材SHOP
     </h2>
 
-    <p data-template-id="daichu-text"
-       class="text-sm leading-relaxed text-center max-w-xl mx-auto mb-10 whitespace-pre-line">ハチドリTableの店内には、ベジタリアン食材を販売する「DAICHU Shop」を併設しています。
+    <p
+      data-template-id="daichu-text"
+      class="text-sm leading-relaxed text-center max-w-xl mx-auto mb-10 whitespace-pre-line">ハチドリTableの店内には、ベジタリアン食材を販売する「DAICHU Shop」を併設しています。
 
 植物性食品や調味料など、ご自宅用や京都のお土産にもおすすめの商品を取り扱っています。</p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-      <img class="w-full h-48 object-cover rounded-xl"
-           loading="lazy"
-           src="daichuproduct.JPG"
-           alt="ハチドリTable店内のDAICHU Shopで販売するベジタリアン食材">
-
-      <img class="w-full h-48 object-cover rounded-xl"
-           loading="lazy"
-           src="shop.JPG"
-           alt="京都 ハチドリTable店内のDAICHU Shop">
-
-      <img class="w-full h-48 object-cover rounded-xl"
-           loading="lazy"
-           src="vegcurry.JPG"
-           alt="DAICHU Shopで取り扱う植物性食品">
+      <img class="w-full h-48 object-cover rounded-xl" loading="lazy" src="daichuproduct.JPG" alt="ハチドリTable店内のDAICHU Shopで販売するベジタリアン食材">
+      <img class="w-full h-48 object-cover rounded-xl" loading="lazy" src="shop.JPG" alt="京都 ハチドリTable店内のDAICHU Shop">
+      <img class="w-full h-48 object-cover rounded-xl" loading="lazy" src="vegcurry.JPG" alt="DAICHU Shopで取り扱う植物性食品">
 
     </div>
 
     <div class="flex justify-center mt-8">
 
-      <a href="https://daichyuolive.thebase.in"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn-coral px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2">
+      <a
+        href="https://daichyuolive.thebase.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-coral px-6 py-3 rounded-full font-medium text-sm inline-flex items-center gap-2">
 
         <i data-lucide="shopping-bag" style="width:16px;height:16px;"></i>
 
@@ -939,12 +938,11 @@
         </span>
 
       </a>
-    </div>
 
+    </div>
   </div>
 </section>
 
-<!-- 09 OUR SPACE -->
 <section class="px-6 py-20 bg-white">
 
   <div class="max-w-4xl mx-auto">
@@ -953,43 +951,22 @@
       OUR SPACE
     </p>
 
-    <h2 data-template-id="space-title"
-        class="font-bold text-2xl md:text-3xl mb-10 text-center">
+    <h2 data-template-id="space-title" class="font-bold text-2xl md:text-3xl mb-10 text-center">
       店内・外観
     </h2>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
 
-      <img class="w-full h-48 md:h-64 object-cover rounded-xl col-span-2 md:col-span-2"
-           loading="lazy"
-           src="cafe.JPG"
-           alt="京都のヴィーガンカフェ ハチドリTableの店内">
-
-      <img class="w-full h-40 object-cover rounded-xl"
-           loading="lazy"
-           src="soykatsu.jpg"
-           alt="ハチドリTableの大豆ミートカツ丼">
-
-      <img class="w-full h-40 object-cover rounded-xl"
-           loading="lazy"
-           src="ramen.JPG"
-           alt="ハチドリTableのヴィーガン胡麻ラーメン">
-
-      <img class="w-full h-40 object-cover rounded-xl"
-           loading="lazy"
-           src="coffee.JPG"
-           alt="ハチドリTableのコーヒー">
-
-      <img class="w-full h-48 md:h-56 object-cover rounded-xl col-span-2"
-           loading="lazy"
-           src="exterior.JPG"
-           alt="京都駅・東寺近くのハチドリTable外観">
+      <img class="w-full h-48 md:h-64 object-cover rounded-xl col-span-2 md:col-span-2" loading="lazy" src="cafe.JPG" alt="京都のヴィーガンカフェ ハチドリTableの店内">
+      <img class="w-full h-40 object-cover rounded-xl" loading="lazy" src="soykatsu.jpg" alt="ハチドリTableの大豆ミートカツ丼">
+      <img class="w-full h-40 object-cover rounded-xl" loading="lazy" src="ramen.JPG" alt="ハチドリTableのヴィーガン胡麻ラーメン">
+      <img class="w-full h-40 object-cover rounded-xl" loading="lazy" src="coffee.JPG" alt="ハチドリTableのコーヒー">
+      <img class="w-full h-48 md:h-56 object-cover rounded-xl col-span-2" loading="lazy" src="exterior.JPG" alt="京都駅・東寺近くのハチドリTable外観">
 
     </div>
   </div>
 </section>
 
-<!-- 10 FAQ -->
 <section id="faq" class="px-6 py-16">
 
   <div class="max-w-3xl mx-auto">
@@ -998,8 +975,7 @@
       FAQ
     </p>
 
-    <h2 data-template-id="faq-heading"
-        class="text-center font-bold text-2xl md:text-3xl mb-10">
+    <h2 data-template-id="faq-heading" class="text-center font-bold text-2xl md:text-3xl mb-10">
       よくあるご質問
     </h2>
 
@@ -1105,7 +1081,6 @@
   </div>
 </section>
 
-<!-- 11 ACCESS -->
 <section id="access" class="px-6 py-16 bg-ivory">
 
   <div class="max-w-3xl mx-auto">
@@ -1114,8 +1089,7 @@
       ACCESS
     </p>
 
-    <h2 data-template-id="access-heading"
-        class="text-center font-bold text-2xl md:text-3xl mb-10">
+    <h2 data-template-id="access-heading" class="text-center font-bold text-2xl md:text-3xl mb-10">
       アクセス
     </h2>
 
@@ -1129,21 +1103,18 @@
       <p class="text-sm mb-6">
         〒601-8471<br>
         京都府京都市南区八条通大宮西入八条町438<br>
-        <span id="access-address-sub"
-              class="hidden text-xs text-gray-500 mt-1 inline-block"></span>
+        <span id="access-address-sub" class="hidden text-xs text-gray-500 mt-1 inline-block"></span>
       </p>
 
       <div class="mb-6">
-        <p data-template-id="access-directions"
-           class="text-sm leading-relaxed whitespace-pre-line">京都駅から徒歩約15分
+        <p data-template-id="access-directions" class="text-sm leading-relaxed whitespace-pre-line">京都駅から徒歩約15分
 東寺北総門から徒歩約3分
 駐車場2台</p>
       </div>
 
       <div class="mb-6">
 
-        <h4 data-template-id="access-hours-title"
-            class="font-bold text-sm mb-2">
+        <h4 data-template-id="access-hours-title" class="font-bold text-sm mb-2">
           営業時間
         </h4>
 
@@ -1151,29 +1122,23 @@
           Lunch 11:00–14:00
         </p>
 
-        <p data-template-id="access-lunch-note"
-           class="text-xs text-gray-500 mb-3">
+        <p data-template-id="access-lunch-note" class="text-xs text-gray-500 mb-3">
           夜の予約がない日は15:00まで営業。
         </p>
 
-        <p data-template-id="access-dinner"
-           class="text-sm font-semibold">
+        <p data-template-id="access-dinner" class="text-sm font-semibold">
           Dinner 17:00–19:00（完全予約制）
         </p>
 
-        <p data-template-id="access-dinner-note"
-           class="text-xs text-gray-500 mb-3">
+        <p data-template-id="access-dinner-note" class="text-xs text-gray-500 mb-3">
           予約は前日の15:00まで。
         </p>
 
-        <p data-template-id="access-reservation-note"
-           class="text-xs text-gray-500 mb-3">
+        <p data-template-id="access-reservation-note" class="text-xs text-gray-500 mb-3">
           5名以上で来店する場合は、事前予約をお願いします。
         </p>
 
-        <p data-template-id="access-closed"
-           class="text-sm font-bold"
-           style="color:#E8806A;">
+        <p data-template-id="access-closed" class="text-sm font-bold" style="color:#E8806A;">
           Closed on Sunday ／ 日曜定休　その他
         </p>
 
@@ -1191,18 +1156,20 @@
 
     <div class="flex flex-wrap justify-center gap-3">
 
-      <a href="https://maps.app.goo.gl/e3MHZNTWLu7jX9RPA"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
+      <a
+        href="https://maps.app.goo.gl/e3MHZNTWLu7jX9RPA"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
         <i data-lucide="map-pin" style="width:16px;height:16px;"></i>
         Google Maps
       </a>
 
-      <a href="https://www.google.co.jp/search?kgmid=/g/11lnrxws3p&hl=ja-JP&q=Vegetarian+food%26coffee+%E3%83%8F%E3%83%81%E3%83%89%E3%83%AATable"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
+      <a
+        href="https://www.google.co.jp/search?kgmid=/g/11lnrxws3p&hl=ja-JP&q=Vegetarian+food%26coffee+%E3%83%8F%E3%83%81%E3%83%89%E3%83%AATable"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
         <i data-lucide="star" style="width:16px;height:16px;"></i>
         <span class="flex flex-col items-start leading-tight">
           <span class="text-[10px] opacity-70">Google Reviews</span>
@@ -1210,16 +1177,18 @@
         </span>
       </a>
 
-      <a href="tel:0752010083"
-         class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
+      <a
+        href="tel:0752010083"
+        class="btn-brown px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
         <i data-lucide="phone" style="width:16px;height:16px;"></i>
         Call
       </a>
 
-      <a href="https://www.instagram.com/hachidori.table/"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn-coral px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
+      <a
+        href="https://www.instagram.com/hachidori.table/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-coral px-5 py-3 rounded-full text-sm font-medium inline-flex items-center gap-2">
         <i data-lucide="instagram" style="width:16px;height:16px;"></i>
         Instagram
       </a>
@@ -1231,7 +1200,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="px-6 py-10 text-center" style="background:#3D2B1F;">
 
   <p class="font-bold text-xl" style="color:#FDFBF7;">
@@ -1244,7 +1212,6 @@
 
 </footer>
 
-<!-- FIXED RESERVATION BUTTON -->
 <button
   id="reservation-open"
   class="reservation-fixed"
@@ -1260,7 +1227,6 @@
 
 </button>
 
-<!-- RESERVATION MODAL -->
 <div
   id="reservation-modal"
   class="reservation-modal"
@@ -1295,54 +1261,34 @@
       ご都合のよい方法からご連絡ください。
     </p>
 
-    <!-- PHONE -->
-    <a
-      href="tel:0752010083"
-      class="reservation-option">
-
+    <a href="tel:0752010083" class="reservation-option">
       <i data-lucide="phone" style="width:22px;height:22px;"></i>
-
       <div>
-        <strong data-template-id="reservation-phone">
-          電話で予約
-        </strong>
+        <strong data-template-id="reservation-phone">電話で予約</strong>
         <span>075-201-0083</span>
       </div>
-
     </a>
 
-    <!-- EMAIL -->
     <a
       href="mailto:cafe@daichyu.com?subject=%E3%83%8F%E3%83%81%E3%83%89%E3%83%AATable%20%E4%BA%88%E7%B4%84%E5%B8%8C%E6%9C%9B%20%2F%20Reservation%20Request"
       class="reservation-option">
-
       <i data-lucide="mail" style="width:22px;height:22px;"></i>
-
       <div>
-        <strong data-template-id="reservation-email">
-          メールで予約
-        </strong>
+        <strong data-template-id="reservation-email">メールで予約</strong>
         <span>cafe@daichyu.com</span>
       </div>
-
     </a>
 
-    <!-- INSTAGRAM -->
     <a
       href="https://www.instagram.com/hachidori.table/"
       target="_blank"
       rel="noopener noreferrer"
       class="reservation-option">
-
       <i data-lucide="instagram" style="width:22px;height:22px;"></i>
-
       <div>
-        <strong data-template-id="reservation-instagram">
-          Instagram DM
-        </strong>
+        <strong data-template-id="reservation-instagram">Instagram DM</strong>
         <span>@hachidori.table</span>
       </div>
-
     </a>
 
     <div class="mt-5 pt-5 border-t border-stone-200">
@@ -1359,11 +1305,11 @@
 </div>
 
 <script>
+
   if (window.lucide) {
     lucide.createIcons();
   }
 
-  /* MOBILE NAV */
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
   const closeNav = document.getElementById('close-nav');
@@ -1383,7 +1329,6 @@
   });
 
 
-  /* FAQ */
   document.querySelectorAll('.faq-toggle').forEach(btn => {
 
     btn.addEventListener('click', () => {
@@ -1415,7 +1360,6 @@
   });
 
 
-  /* ABOUT STORY */
   const storyToggle = document.getElementById('about-story-toggle');
   const storyFull = document.getElementById('about-story-full');
   const storyMore = document.querySelector('[data-template-id="about-story-more"]');
@@ -1438,7 +1382,6 @@
   });
 
 
-  /* SMOOTH SCROLL */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
 
     a.addEventListener('click', e => {
@@ -1463,7 +1406,6 @@
   });
 
 
-  /* RESERVATION MODAL */
   const reservationOpen =
     document.getElementById('reservation-open');
 
@@ -1512,7 +1454,6 @@
   );
 
 
-  /* TRANSLATIONS */
   const translations = {
 
     'hero-location': {
@@ -1697,7 +1638,6 @@ Small as we are, we hope to do what we can through vegetarian food.
 We want to offer choices that are kinder to people and the planet.
 
 From this place, one small drop…`,
-
       zh: `Hachidori Table 名字的由來
 
 本店位於京都的八條通。
@@ -1939,7 +1879,6 @@ Groups of 5 or more also require advance reservation.`,
   };
 
 
-  /* SAVE JAPANESE ORIGINAL */
   const originalHtml = {};
 
   document.querySelectorAll('[data-template-id]').forEach(el => {
@@ -1954,7 +1893,6 @@ Groups of 5 or more also require advance reservation.`,
   });
 
 
-  /* LANGUAGE SWITCH */
   function setLanguage(lang) {
 
     document.documentElement.lang =
