@@ -2128,7 +2128,9 @@ Groups of 5 or more also require advance reservation.`,
 
     }
 
-    mobileNav?.classList.remove('active');
+    // 言語選択後はモバイルメニューを完全に閉じ、
+    // openMobileNav() で設定したスクロールロックも解除する
+    closeMobileNav();
 
   }
 
