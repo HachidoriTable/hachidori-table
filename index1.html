@@ -2070,8 +2070,17 @@ Groups of 5 or more also require advance reservation.`,
         const value =
           translations[id][lang];
 
-        el.textContent =
-          value;
+        // この2項目だけ翻訳内の <br> を改行として反映する
+        const htmlTranslationIds = [
+          'feature-3-text',
+          'feature-5-text'
+        ];
+
+        if (htmlTranslationIds.includes(id)) {
+          el.innerHTML = value;
+        } else {
+          el.textContent = value;
+        }
 
         el.style.whiteSpace =
           value.includes('\n')
